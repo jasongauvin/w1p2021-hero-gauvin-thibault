@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hero</title>
+  <link rel="stylesheet" href="/app.c328ef1a.css"></head>
+  <body>
+<!--     <div class="settings">
+      <p class="button">Réglages</p>
+      <ul>
+        <li><label for="sound">Musique</label> <input id="sound" checked type="checkbox"></li>
+        <li><label for="volume">Volume</label> <input id="volume" type="range" min="0" max="1" step="0.1"></li>
+      </ul>
+    </div> -->
+    <div id="root">
+      <router-view :key="$route.name + ($route.params.id || '')"></router-view>
+      
+    </div>
+
+    <script src="/app.c328ef1a.js"></script>
+  </body>
+</html>

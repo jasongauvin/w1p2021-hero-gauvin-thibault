@@ -1,0 +1,386 @@
+{
+    "characters":[
+        {
+            "name": "Garçon",
+            "description": "J'aime le sport",
+            "image": ""
+        },
+        {
+            "name": "Fille",
+            "description": "J'aime les garçons"
+        }
+    ],
+    "character": {
+        "image": "dist/characters/perso1/greenbottom.gif"
+    },
+    "home": {
+        "image": "/images/castle.png"
+    },
+    "steps": {
+        "0": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/0.png",
+            "garçon": {
+                "name": "José",
+                "message": "On va casser des briques!",
+                "answers": [
+                    {
+                        "message": "Que fait tu Maggle? ",
+                        "transition": "",
+                        "link": "/test/1",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons dormir ",
+                        "transition": "",
+                        "link": "/test/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Shopping? ",
+                        "transition": "",
+                        "link": "/test/1",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons danser !",
+                        "transition": "",
+                        "link": "/test/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "On va casser des bites!",
+                "answers": [
+                    {
+                        "message": "Défonce le !",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Aller ",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Pourquoi? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons danser !",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    }
+                ]
+            }
+        },
+        "1": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/1.png",
+            "garçon": {
+                "name": "José",
+                "message": "On va casser des briques!",
+                "answers": [
+                    {
+                        "message": "Que fait tu Maggle? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons dormir ",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Shopping? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons danser !",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "On va casser des bites!",
+                "answers": [
+                    {
+                        "message": "Défonce le !",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Aller ",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Pourquoi? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons danser !",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    }
+                ]
+            }
+        },
+        "2": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/2.png",
+            "garçon": {
+                "name": "José",
+                "message": "On va casser des briques!",
+                "answers": [
+                    {
+                        "message": "Que fait tu Maggle? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons dormir ",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Shopping? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons danser !",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "On va casser des bites!",
+                "answers": [
+                    {
+                        "message": "Défonce le !",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Aller ",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Pourquoi? ",
+                        "transition": "",
+                        "link": "/game/2",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    },
+                    {
+                        "message": "Allons danser !",
+                        "transition": "",
+                        "link": "/game/3",
+                        "attack": " ",
+                        "strengh" : " ",
+                        "defence" : " ",
+                        "life" : " "
+                    }
+                ]
+            }
+        }
+    },
+    "tuiles" : [
+        [
+            "maps/chg.png",
+            5,
+            10,
+            15,
+            20
+        ],
+        [
+            1,
+            6,
+            11,
+            16,
+            21
+        ],
+        [
+            2,
+            7,
+            12,
+            17,
+            22
+        ],
+        [
+            3,
+            8,
+            13,
+            18,
+            23
+        ],
+        [
+            4,
+            9,
+            14,
+            19,
+            24
+        ]
+    ],
+    "map": {
+        "1": {
+
+        }
+    },
+    "levels": {
+        "1": {
+            "message": " ",
+            "responce": [2, 3],
+            "link": " "
+        },
+        "2": {
+            "message": " ",
+            "responce": [2, 3],
+            "link": " "
+        },
+        "3": {
+            "message": " ",
+            "responce": [2, 3],
+            "link": " "
+        }
+    },
+
+    "skills": {
+        "1": {
+            "name" : "KABOOM",
+            "attack": "facial",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        },
+        "2": {
+            "name" : " ",
+            "attack": " ",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        },
+        "3": {
+            "name" : " ",
+            "attack": " ",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        },
+        "4": {
+            "name" : " ",
+            "attack": " ",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        }
+
+
+    }
+}
