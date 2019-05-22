@@ -137,7 +137,7 @@ table {
 body,
 button,
 input,
-select,
+sel ect,
 textarea {
   font-family: "Roboto";
 }
@@ -161,20 +161,95 @@ textarea {
   border-radius: 5px;
   display: inline-block;
   border: none;
-}
-
-.settings {
-  position: absolute;
-  color: white;
   cursor: pointer;
 }
-.settings ul {
-  display: none;
+
+/* *{
+  box-sizing: border-box;
 }
 
-.settings.is-open ul {
-  display: block;
+body{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
+.homegif{
+  width: 940px;
+  height: 940px;
+  background-size: cover;
+  background-position: 40% 50%;
+  position: relative;
+}
+.title{
+  display: flex;
+  align-items: center;
+  width: 740px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 940px;
+  p{
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 100px;
+  }
+}
+.stat{
+  width: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+}
+.choose{
+  width: 740px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  left: 940px;
+}
+.characters{
+  width: 740px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    width: 260px;
+    height: 260px;
+  }
+  p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 30px;
+  }
+}
+
+.text{
+  padding: 30px;
+  line-height: 250%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 740px;
+  height: 340px;
+  position: absolute;
+  top: 600px;
+  left: 940px;
+  p{
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 30px;
+  }
+} */
 article h2 {
   font-size: 24px;
   font-weight: bold;
@@ -202,8 +277,16 @@ h1[data-v-611926] {
   width: 50vw;
   height: 40vh;
 }
+.big-header[data-v-b8011c] {
+  background-size: cover;
+}
 .big-header[data-v-9f37ae] {
   background-size: cover;
+}
+.video[data-v-9f37ae] {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */

@@ -25,85 +25,57 @@
             "image": "/images/maps/0.png",
             "garçon": {
                 "name": "José",
-                "message": "On va casser des briques!",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
                 "answers": [
                     {
-                        "message": "Que fait tu Maggle? ",
-                        "transition": "",
-                        "link": "/test/1",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/1",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Allons dormir ",
-                        "transition": "",
-                        "link": "/test/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Shopping? ",
-                        "transition": "",
-                        "link": "/test/1",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Allons danser !",
-                        "transition": "",
-                        "link": "/test/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/5",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     }
                 ]
             },
             "fille": {
                 "name": "Joséphine",
-                "message": "On va casser des bites!",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
                 "answers": [
                     {
-                        "message": "Défonce le !",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/1",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Aller ",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Pourquoi? ",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Allons danser !",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/5",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     }
                 ]
             }
@@ -116,85 +88,79 @@
             "image": "/images/maps/1.png",
             "garçon": {
                 "name": "José",
-                "message": "On va casser des briques!",
+                "message": "super, une bourse de 10 pièces! ou allez ?",
                 "answers": [
                     {
-                        "message": "Que fait tu Maggle? ",
-                        "transition": "",
+                        "message": "la rune",
+                        "transition": " ",
+                        "link": "/game/0",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un lit",
+                        "transition": " ",
                         "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Allons dormir ",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Shopping? ",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Allons danser !",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     }
                 ]
             },
             "fille": {
                 "name": "Joséphine",
-                "message": "On va casser des bites!",
+                "message": "super, une bourse de 10 pièces! ou allez ?",
                 "answers": [
                     {
-                        "message": "Défonce le !",
-                        "transition": "",
+                        "message": "la rune",
+                        "transition": " ",
+                        "link": "/game/0",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un lit",
+                        "transition": " ",
                         "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Aller ",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Pourquoi? ",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Allons danser !",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     }
                 ]
             }
@@ -207,85 +173,2095 @@
             "image": "/images/maps/2.png",
             "garçon": {
                 "name": "José",
-                "message": "On va casser des briques!",
+                "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
                 "answers": [
                     {
-                        "message": "Que fait tu Maggle? ",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "une bourse",
+                        "transition": " ",
+                        "link": "/game/1",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Allons dormir ",
-                        "transition": "",
+                        "message": "affrtoner un mechant",
+                        "transition": " ",
                         "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Shopping? ",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
-                    },
-                    {
-                        "message": "Allons danser !",
-                        "transition": "",
-                        "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "voir un ancien brigand",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     }
                 ]
             },
             "fille": {
                 "name": "Joséphine",
-                "message": "On va casser des bites!",
+                "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
                 "answers": [
                     {
-                        "message": "Défonce le !",
-                        "transition": "",
-                        "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "message": "une bourse",
+                        "transition": " ",
+                        "link": "/game/1",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Aller ",
-                        "transition": "",
+                        "message": "affronter un mechant",
+                        "transition": " ",
                         "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Pourquoi? ",
-                        "transition": "",
+                        "message": "voir un ancien brigand",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "3": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/3.png",
+            "garçon": {
+                "name": "José",
+                "message": "oh non un méchant heuresement que vous aviez votre épée !",
+                "answers": [
+                    {
+                        "message": "un lit",
+                        "transition": " ",
                         "link": "/game/2",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     },
                     {
-                        "message": "Allons danser !",
-                        "transition": "",
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/4",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "oh non un méchant heuresement que vous aviez votre épée !",
+                "answers": [
+                    {
+                        "message": "un lit",
+                        "transition": " ",
+                        "link": "/game/2",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/4",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "4": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/4.png",
+            "garçon": {
+                "name": "José",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
+                "answers": [
+                    {
+                        "message": "affrtoner un mechant",
+                        "transition": " ",
                         "link": "/game/3",
-                        "attack": " ",
-                        "strengh" : " ",
-                        "defence" : " ",
-                        "life" : " "
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "affronter un mechant",
+                        "transition": " ",
+                        "link": "/game/9",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
+                "answers": [
+                    {
+                        "message": "affrtoner un mechant",
+                        "transition": " ",
+                        "link": "/game/3",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "affronter un mechant",
+                        "transition": " ",
+                        "link": "/game/9",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "5": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/5.png",
+            "garçon": {
+                "name": "José",
+                "message": "oh non encore un mandiant , vous lui donnez 10 piece",
+                "answers": [
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/0",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse",
+                        "transition": " ",
+                        "link": "/game/10",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "oh non encore un mandiant , vous lui donnez une piece",
+                "answers": [
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/0",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse",
+                        "transition": " ",
+                        "link": "/game/10",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "6": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/6.png",
+            "garçon": {
+                "name": "José",
+                "message": "vous ouvrez le coffre et vous y trouvez une épée",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/5",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un ancien brigand",
+                        "transition": " ",
+                        "link": "/game/7",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un antidote",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse",
+                        "transition": " ",
+                        "link": "/game/1",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "vous ouvrez le coffre et vous y trouvez une épée",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/5",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un ancien brigand",
+                        "transition": " ",
+                        "link": "/game/7",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un antidote",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse",
+                        "transition": " ",
+                        "link": "/game/1",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "7": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/7.png",
+            "garçon": {
+                "name": "José",
+                "message": "un acien bigand s'est joint à vous !",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une stèle étrange",
+                        "transition": " ",
+                        "link": "/game/12",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un lit",
+                        "transition": " ",
+                        "link": "/game/2",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "un acien bigand s'est joint à vous !",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une stèle étrange",
+                        "transition": " ",
+                        "link": "/game/12",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un lit",
+                        "transition": " ",
+                        "link": "/game/2",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "8": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/8.png",
+            "garçon": {
+                "name": "José",
+                "message": "oh non encore un mandiant , vous lui donnez une piece",
+                "answers": [
+                    {
+                        "message": "uneancien brigandt",
+                        "transition": " ",
+                        "link": "/game/7",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un méchant",
+                        "transition": " ",
+                        "link": "/game/9",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mechant",
+                        "transition": " ",
+                        "link": "/game/3",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "oh non encore un mandiant , vous lui donnez une piece",
+                "answers": [
+                    {
+                        "message": "un ancien brigand",
+                        "transition": " ",
+                        "link": "/game/7",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un méchant",
+                        "transition": " ",
+                        "link": "/game/9",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mechant",
+                        "transition": " ",
+                        "link": "/game/3",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+         "9": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/9.png",
+            "garçon": {
+                "name": "José",
+                "message": "oh un méchant heuresement que vous aviez votre épée",
+                "answers": [
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/4",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": " ",
+                        "link": "/game/14",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "oh un méchant heuresement que vous aviez votre épée",
+                "answers": [
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/4",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": " ",
+                        "link": "/game/14",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "10": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/10.png",
+            "garçon": {
+                "name": "José",
+                "message": "Super une bourse de 10 pièces",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/5",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/15",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une potion",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                "name": "Joséphine",
+                "message": "Super une bourse de 10 pièces",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/5",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/15",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une potion",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "11": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/11.png",
+            "garçon": {
+                "name": "José",
+                "message": "Vous trouvez une potion et vous la trouvez, on vous a jamais dit de pas boire n'importe quoi ?!",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": " ",
+                        "link": "/game/12",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Vous trouvez une potion et vous la trouvez, on vous a jamais dit de pas boire n'importe quoi ?!",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": " ",
+                        "link": "/game/12",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "12": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/12.png",
+            "garçon": {
+                "name": "José",
+                "message": "Une bien etrange stèle, a quoi peut elle bien servir ?",
+                "answers": [
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/7",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un antidote",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Une bien etrange stèle, a quoi peut elle bien servir ?",
+                "answers": [
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/7",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un antidote",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "13": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/13.png",
+            "garçon": {
+                "name": "José",
+                "message": "super 10 pièces en plus dans votre bourse !",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": " ",
+                        "link": "/game/12",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": " ",
+                        "link": "/game/14",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "super 10 pièces en plus dans votre bourse !",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": " ",
+                        "link": "/game/12",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": " ",
+                        "link": "/game/14",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/8",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "14": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/14.png",
+            "garçon": {
+                "name": "José",
+                "message": "Vous voila au début du donjon , ou Voulze vous allez",
+                "answers": [
+                    {
+                        "message": "un méchant",
+                        "transition": " ",
+                        "link": "/game/9",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/19",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Vous voila au début du donjon , ou Voulze vous allez",
+                "answers": [
+                    {
+                        "message": "un méchant",
+                        "transition": " ",
+                        "link": "/game/9",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/19",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "15": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/15.png",
+            "garçon": {
+                "name": "José",
+                "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier",
+                "answers": [
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/10",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/20",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier",
+                "answers": [
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/10",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/20",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "16": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/16.png",
+            "garçon": {
+                "name": "José",
+                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance !",
+                "answers": [
+                    {
+                        "message": "un antidote",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/21",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/17",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre super méchant",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance !",
+                "answers": [
+                    {
+                        "message": "un antidote",
+                        "transition": " ",
+                        "link": "/game/11",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/21",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de piece",
+                        "transition": " ",
+                        "link": "/game/17",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre super méchant",
+                        "transition": " ",
+                        "link": "/game/6",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "17": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/17.png",
+            "garçon": {
+                "name": "José",
+                "message": "et HOP! 10 pièces en plus pour bibi.",
+                "answers": [
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une stèle étrange",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/22",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "et HOP! 10 pièces en plus pour bibi.",
+                "answers": [
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une stèle étrange",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/22",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "18": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/18.png",
+            "garçon": {
+                "name": "José",
+                "message": "un ancien brigand veut se joindre à vous , vous acceptez.",
+                "answers": [
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/17",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre bourse",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un petit chien",
+                        "transition": " ",
+                        "link": "/game/23",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/19",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "un ancien brigand veut se joindre à vous , vous acceptez.",
+                "answers": [
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/17",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre bourse",
+                        "transition": " ",
+                        "link": "/game/13",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un petit chien",
+                        "transition": " ",
+                        "link": "/game/23",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/19",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "19": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/19.png",
+            "garçon": {
+                "name": "José",
+                "message": "Super un coffre , vous l'ouvrez et y trouvez une épée",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": " ",
+                        "link": "/game/24",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": " ",
+                        "link": "/game/14",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Super un coffre , vous l'ouvrez et y trouvez une épée",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": " ",
+                        "link": "/game/24",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigand",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": " ",
+                        "link": "/game/14",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "20": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/20.png",
+            "garçon": {
+                "name": "José",
+                "message": "Vous venez d'activer une rune !",
+                "answers": [
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/0",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "unautre super méchantd",
+                        "transition": " ",
+                        "link": "/game/26",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Vous venez d'activer une rune !",
+                "answers": [
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/20",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un autre super méchant",
+                        "transition": " ",
+                        "link": "/game/26",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "21": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/21.png",
+            "garçon": {
+                "name": "José",
+                "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier",
+                "answers": [
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/20",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/22",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier",
+                "answers": [
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/20",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/22",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un marchand",
+                        "transition": " ",
+                        "link": "/game/16",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "22": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/22.png",
+            "garçon": {
+                "name": "José",
+                "message": "oh nan pas un mandiant , vous lui donez 10 pièces",
+                "answers": [
+                    {
+                        "message": "un petit chien",
+                        "transition": " ",
+                        "link": "/game/23",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/17",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/21",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "oh nan pas un mandiant , vous lui donez 10 pièces",
+                "answers": [
+                    {
+                        "message": "un petit chien",
+                        "transition": " ",
+                        "link": "/game/23",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une bourse de pièce",
+                        "transition": " ",
+                        "link": "/game/17",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un super méchant",
+                        "transition": " ",
+                        "link": "/game/21",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "23": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/23.png",
+            "garçon": {
+                "name": "José",
+                "message": "Un petit chien, vous le caressez mais il vous mord , il avait la rage...",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/22",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/24",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigandt",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "Un petit chien, vous le caressez mais il vous mord , il avait la rage...",
+                "answers": [
+                    {
+                        "message": "un mandiant",
+                        "transition": " ",
+                        "link": "/game/22",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "une rune",
+                        "transition": " ",
+                        "link": "/game/24",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un brigandt",
+                        "transition": " ",
+                        "link": "/game/18",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            }
+        },
+        "24": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/24.png",
+            "garçon": {
+                "name": "José",
+                "message": "vous venez de trouver une rune !",
+                "answers": [
+                    {
+                        "message": "un petit chien",
+                        "transition": " ",
+                        "link": "/game/23",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/19",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    }
+                ]
+            },
+            "fille": {
+                
+                "name": "Joséphine",
+                "message": "vous venez de trouver une rune !",
+                "answers": [
+                    {
+                        "message": "un petit chien",
+                        "transition": " ",
+                        "link": "/game/23",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": " ",
+                        "link": "/game/19",
+                        "sword": " ",
+                        "sick" : " ",
+                        "shield" : " ",
+                        "money" : " ",
+                        "thief": "",
+                        "rune": " "
                     }
                 ]
             }
@@ -327,60 +2303,5 @@
             19,
             24
         ]
-    ],
-    "map": {
-        "1": {
-
-        }
-    },
-    "levels": {
-        "1": {
-            "message": " ",
-            "responce": [2, 3],
-            "link": " "
-        },
-        "2": {
-            "message": " ",
-            "responce": [2, 3],
-            "link": " "
-        },
-        "3": {
-            "message": " ",
-            "responce": [2, 3],
-            "link": " "
-        }
-    },
-
-    "skills": {
-        "1": {
-            "name" : "KABOOM",
-            "attack": "facial",
-            "strengh" : " ",
-            "defence" : " ",
-            "life" : " "
-        },
-        "2": {
-            "name" : " ",
-            "attack": " ",
-            "strengh" : " ",
-            "defence" : " ",
-            "life" : " "
-        },
-        "3": {
-            "name" : " ",
-            "attack": " ",
-            "strengh" : " ",
-            "defence" : " ",
-            "life" : " "
-        },
-        "4": {
-            "name" : " ",
-            "attack": " ",
-            "strengh" : " ",
-            "defence" : " ",
-            "life" : " "
-        }
-
-
-    }
+    ]
 }

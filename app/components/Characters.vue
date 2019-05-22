@@ -5,8 +5,32 @@
     <div class="characters">
         <Character  v-for="character in characters" :key="character.name" :character="character" />
     </div>
+    
+<!--     <section class="homegif"></section>
+    <section class="title">
+      <p>Dungeon rush</p>
+    </section>
+
+    <section class="choose">
+      <ul class="characters">
+        <li>
+          <img src="" alt="charact1">
+          <p>le mec</p>
+        </li>
+        <li>
+          <img src="" alt="charact2">
+          <p>la meuf</p>
+        </li>
+      </ul>
+    </section>
+    <section class="text">
+      <p>Selectionez un personnage à l'aide de votre curseur pour commencer a jouer</p>
+    </section> -->
+
+
+
     <router-link class="button" to="/home">Retour</router-link>
-    <router-link class="button" to="/test/0">Play</router-link>
+    <router-link class="button" to="/game/0">Play</router-link>
   </div>
 </template>
 <style lang="scss" scoped>

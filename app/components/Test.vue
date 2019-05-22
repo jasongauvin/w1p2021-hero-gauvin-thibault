@@ -3,6 +3,12 @@
     <h1>Page {{ $route.params.id }}</h1>
     <h1>{{ phase.garçon.message }}</h1>
     <h1 v-if="character === 'Fille'">{{ phase.fille.message }}</h1>
+    
+    <!-- VIDEO ET AUDIO -->
+  <video class="video" src="../assets/images/BigBuckBunny.mp4" autoplay></video>
+<!--   <audio src="../assets/audio/test.mp3" autoplay ref="audio"></audio>
+ -->
+    
     <router-link
       v-for="answer in answers"
       v-bind:key="answer.message"
@@ -16,6 +22,12 @@
 <style lang="scss" scoped>
 .big-header {
   background-size: cover;
+}
+.video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+
 }
 </style>
 
@@ -39,7 +51,7 @@ export default {
       answers: this.characterChoice(),
       step: this.setStep(),
       character: character.get(),
-      image: data.steps[this.$route.params.id].image,    }
+      image: data.steps[this.$route.params.id].image    }
   },
   methods: {
     createMap() {
@@ -70,6 +82,11 @@ export default {
     '$route.params.id' (to, from){
       this.step = this.getStep();
     }
-  }
+  },
+/*   mounted(){
+    setTimeout(() => {
+      this.$refs.audio.pause();
+    }, 2000)
+  } */
 };
 </script>

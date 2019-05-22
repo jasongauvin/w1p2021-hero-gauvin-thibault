@@ -1,33 +1,70 @@
 <template>
-  <div class="big-header">
-
-    <h1>{{ $route.params.id }}</h1>
-
-  <router-link to="2">ETAPE 2</router-link>
+  <div class="big-header" v-bind:style="{ backgroundImage: 'url(' + image + ')' }">
+    <h1>Page {{ $route.params.id }}</h1>
+    <h1>{{ phase.garçon.message }}</h1>
+    <h1 v-if="character === 'Fille'">{{ phase.fille.message }}</h1>    
+    <router-link
+      v-for="answer in answers"
+      v-bind:key="answer.message"
+      class="button"
+      :to="answer.link"
+    >{{answer.message}}
+    </router-link>
   </div>
 </template>
 
+<style lang="scss" scoped>
+.big-header {
+  background-size: cover;
+}
+</style>
+
+
 <script>
+
 import data from "../../data.json";
+// import Map from "../services/mappingGame.js";
+import character from '../services/characterService.js';
+import step from '../services/stepService.js';
 
 
 export default {
   data() {
     return {
-      message: 'Le jeu commence',
-      message1: data.levels['1'].responce[0],
-      message2: 'prout'
-    };
-  },
-  mounted: function(){
-    console.log(this.$route) 
+/*    map: this.createMap(),
+      images: [], 
+      message: game.steps[this.$route.params.id].message,
+      mage: data.game[this.$route.params.id].image,*/
+      phase: data.steps[this.$route.params.id],
+      answers: this.characterChoice(),
+      step: this.setStep(),
+      character: character.get(),
+      image: data.steps[this.$route.params.id].image    }
   },
   methods: {
-    getStep(){
+    createMap() {
+      setTimeout(() => {
+        const map = new Map(document.querySelector('.big-header'), 5, game);
+        this.images = map.create(this.$route.params.id).map(image => require(image));
+      }, 200);
+    },
+    characterChoice() {
+      let answers = data.steps[this.$route.params.id].garçon.answers //attention à GARçON
+      let result = []
+      let characterName = answers.name // character.get()
+      answers.forEach(answer => {
+      answer.perso === characterName || answer.perso === 'Tous' ? result.push(answer) : ''
+      });
+      return result
+    },
+    setStep() {
+      step.set(this.$route.params.id)
+    },
+/*     getStep(){
       return data.steps.find(
-      step => step.id === Number(this.$route.params.id)
+      step => step.id === parInt(this.$route.params.id)
       )
-    }
+    } */
   },
   watch: {
     '$route.params.id' (to, from){
