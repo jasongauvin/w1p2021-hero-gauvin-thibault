@@ -17509,6 +17509,7 @@ function () {
     _classCallCheck(this, Step);
 
     this.step = localStorage.getItem('step') || 1;
+    this.steps = [];
     localStorage.setItem('step', this.step);
   }
   /**
@@ -17524,6 +17525,8 @@ function () {
     value: function set(step) {
       localStorage.setItem('step', step);
       this.step = step;
+      this.steps.push(step);
+      localStorage.setItem('steps', JSON.stringify(this.steps));
     }
     /**
      * @returns current step
@@ -17534,6 +17537,11 @@ function () {
     key: "get",
     value: function get() {
       return localStorage.getItem('step');
+    }
+  }, {
+    key: "getSteps",
+    value: function getSteps() {
+      return JSON.parse(localStorage.getItem('steps'));
     }
   }]);
 
@@ -17557,6 +17565,9 @@ var _stepService = _interopRequireDefault(require("../services/stepService.js"))
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
 //
 //
 //
@@ -17618,6 +17629,8 @@ var _default = {
     },
     setStep: function setStep() {
       _stepService.default.set(this.$route.params.id);
+
+      this.phase = this.$route.params.id;
     }
   },
   watch: {

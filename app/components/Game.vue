@@ -3,6 +3,8 @@
     <h1>Page {{ $route.params.id }}</h1>
     <h1>{{ phase.garçon.message }}</h1>
     <h1 v-if="character === 'Fille'">{{ phase.fille.message }}</h1>    
+    
+    
     <router-link
       v-for="answer in answers"
       v-bind:key="answer.message"
@@ -10,6 +12,7 @@
       :to="answer.link"
     >{{answer.message}}
     </router-link>
+
   </div>
 </template>
 
@@ -59,6 +62,7 @@ export default {
     },
     setStep() {
       step.set(this.$route.params.id)
+      this.phase = this.$route.params.id
     },
 /*     getStep(){
       return data.steps.find(

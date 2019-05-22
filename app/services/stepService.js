@@ -5,6 +5,7 @@
 class Step {
   constructor() {
     this.step = localStorage.getItem('step') || 1;
+    this.steps = [];
     localStorage.setItem('step', this.step);
   }
   /**
@@ -16,6 +17,8 @@ class Step {
   set(step) {
     localStorage.setItem('step', step);
     this.step = step;
+    this.steps.push(step);
+    localStorage.setItem('steps', JSON.stringify(this.steps));
   }
   /**
    * @returns current step
@@ -23,6 +26,9 @@ class Step {
    */
   get() {
     return localStorage.getItem('step');
+  }
+  getSteps() {
+    return JSON.parse(localStorage.getItem('steps'));
   }
 }
 
