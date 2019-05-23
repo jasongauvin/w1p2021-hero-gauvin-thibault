@@ -1,21 +1,22 @@
 <template>
   <div class="big-header" v-bind:style="{ backgroundImage: 'url(' + image + ')' }">
     <div class="text">
-      <h1>Page {{ $route.params.id }}</h1>
       <h1>{{ phase.garçon.message }}</h1>
       <h1 v-if="character === 'fille'">{{ phase.fille.message }}</h1>    
-      <h1>{{items.sword}}</h1>
-      <div class="item" data-content="3">claque</div>
+      <!-- <h1>{{items.sword}}</h1> -->
+      <div class="item" data-content="3"></div>
       <!-- <div class="item" v-for="answer in items"
       v-bind:key="answer.message">
       {{answer.message}}
       </div> -->
 
-      <p class="button" v-for="answer in answers"
-      v-bind:key="answer.message"
-      v-on:click="itemChoice(answer.items, answer.link)">
-      {{answer.message}}
-      </p>
+
+          <p class="button" v-for="answer in answers"
+            v-bind:key="answer.message"
+            v-on:click="itemChoice(answer.items, answer.link)">
+            {{answer.message}}
+          </p>        
+
       <!-- <router-link
 
         v-for="answer in answers"

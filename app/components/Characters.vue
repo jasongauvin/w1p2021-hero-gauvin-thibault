@@ -1,11 +1,14 @@
 <template>
-    <div class="big-header" v-bind:style="{ backgroundImage: 'url(' + image + ')' }">
-    <h1> Avec qui pars-tu à l'aventure ?</h1>
-    <h3>{{ message }}</h3>
-    <div class="characters">
-        <Character  v-for="character in characters" :key="character.name" :character="character" />
+    <div class="big-header">
+      <h1>Selectionez un personnage à l'aide de votre curseur pour commencer a jouer</h1>
+      <div class="characters">
+          <Character  v-for="character in characters" :key="character.name" :character="character" />
+      </div>
+      <div class="text">
+        <router-link class="button" to="/home">Retour</router-link>
+        <router-link class="button" to="/game/14">Play</router-link>
+      </div>
     </div>
-    
 <!--     <section class="homegif"></section>
     <section class="title">
       <p>Dungeon rush</p>
@@ -26,27 +29,61 @@
     <section class="text">
       <p>Selectionez un personnage à l'aide de votre curseur pour commencer a jouer</p>
     </section> -->
-
-
-
-    <router-link class="button" to="/home">Retour</router-link>
-    <router-link class="button" to="/game/0">Play</router-link>
-  </div>
 </template>
 <style lang="scss" scoped>
-* {
-    font-family: Avenir;
+.big-header {
+  width: 940px;
+  height: 940px;
+  background-image: url(../assets/images/coco/character.gif);
+  background-size: 135% 101%;
+  background-position: center;
+  position: relative;
 }
-h1 {
-    font-size: 24px;
-    padding: 30px;
+
+h1{
+  background-color: black;
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 500px;
+height: 30px;
+top: 0px;
+position: absolute;
+left: 940px;
+padding: 120px;
+line-height: 140%;
+text-align: center;
+font-family: "Rubber Biscuit";
+font-weight: bold;
+color: gold;
+font-size: 30px;
 }
 .characters {
+  position: absolute;
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 50vw;
-    height: 40vh;
+    width: 740px;
+    height: 530px;
+    left: 940px;
+    top: 270px;
+}
+.text{
+background-color: black;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+width: 740px;
+height: 140px;
+position: absolute;
+top: 800px;
+left: 940px;
+  .button{
+    border: 0px; 
+  }
 }
 </style>
 <script>
@@ -57,17 +94,16 @@ import data from "../../data.json";
 export default {
   data: function() {
     return {
-      message: data.characters['1'].name,
       characters: [
         {
         name : "Peter",
-        speciality : "saut",
-        image : require('/assets/images/characters/perso1/greenbottom.gif')
+        speciality : "resiste aux morsures",
+        image : require('/assets/images/coco/Bitmap.png')
       },
       {
         name : "Rocco",
-        speciality : "Zbeb Zbeb",
-        image : require('/assets/images/characters/perso1/greendown.gif')
+        speciality : "resiste au poison",
+        image : require('/assets/images/coco/Bitmap2.png')
       }
       ]
     }

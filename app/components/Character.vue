@@ -12,18 +12,29 @@
 <style lang="scss">
 article {
   h2 {
-  font-size : 24px;
-  font-weight: bold;
+  text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 50px;
+    line-height: 180%;
   }
 
   h3 {
-    font-size: 18px;
-    text-decoration: underline;
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 20px;
+    line-height: 180%;
   }
   .test {
-    background: blue;
-    width: auto;
-    height: auto;
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 20px;
+    line-height: 180%;
   }
 }
 </style>

@@ -15,7 +15,9 @@
       </ul>
     </div> -->
     <div id="root">
-      <router-view :key="$route.name + ($route.params.id || '')"></router-view>
+        <transition name="slide">
+            <router-view :key="$route.name + ($route.params.id || '')"></router-view>
+        </transition>
       
     </div>
 
