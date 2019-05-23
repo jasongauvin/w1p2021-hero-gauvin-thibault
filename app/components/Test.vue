@@ -5,8 +5,8 @@
     <h1 v-if="character === 'Fille'">{{ phase.fille.message }}</h1>
     
     <!-- VIDEO ET AUDIO -->
-  <video class="video" src="../assets/images/BigBuckBunny.mp4" autoplay></video>
-<!--   <audio src="../assets/audio/test.mp3" autoplay ref="audio"></audio>
+<!--   <video class="video" src="../assets/images/BigBuckBunny.mp4" autoplay></video>
+ --><!--   <audio src="../assets/audio/test.mp3" autoplay ref="audio"></audio>
  -->
     
     <router-link

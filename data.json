@@ -31,23 +31,27 @@
                         "message": "une bourse de piece",
                         "transition": " ",
                         "link": "/game/1",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     },
                     {
                         "message": "un mandiant",
                         "transition": " ",
                         "link": "/game/5",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     }
                 ]
             },
@@ -58,24 +62,27 @@
                     {
                         "message": "une bourse de piece",
                         "transition": " ",
-                        "link": "/game/1",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     },
                     {
                         "message": "un mandiant",
                         "transition": " ",
                         "link": "/game/5",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     }
                 ]
             }
@@ -94,34 +101,40 @@
                         "message": "la rune",
                         "transition": " ",
                         "link": "/game/0",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     },
                     {
                         "message": "un lit",
                         "transition": " ",
                         "link": "/game/2",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     },
                     {
                         "message": "un coffre",
                         "transition": " ",
                         "link": "/game/6",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     }
                 ]
             },
@@ -133,34 +146,40 @@
                         "message": "la rune",
                         "transition": " ",
                         "link": "/game/0",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     },
                     {
                         "message": "un lit",
                         "transition": " ",
                         "link": "/game/2",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     },
                     {
                         "message": "un coffre",
                         "transition": " ",
                         "link": "/game/6",
-                        "sword": " ",
-                        "sick" : " ",
-                        "shield" : " ",
-                        "money" : " ",
-                        "thief": "",
-                        "rune": " "
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune": 0
+                        }
                     }
                 ]
             }

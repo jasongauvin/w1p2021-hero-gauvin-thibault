@@ -25,14 +25,18 @@ textarea {
 }
 
 .button {
-  color: $hetic-green;
   text-decoration: none;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
   display: inline-block;
-  border: none;
   cursor: pointer;
+  text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 20px;
+    padding: 30px;
+    background-color: black;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
 }
 
 /* *{
