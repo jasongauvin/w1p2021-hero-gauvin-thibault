@@ -945,6 +945,9 @@ h1[data-v-611926] {
   justify-content: space-around;
   align-items: center;
 }
+.text .button[data-v-b8011c] {
+  font-size: 15px;
+}
 .money[data-v-b8011c] {
   background-color: black;
   display: flex;

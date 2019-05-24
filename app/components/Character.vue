@@ -43,6 +43,7 @@ article {
 <script>
 import router from '../router.js';
 import character from '../services/characterService.js';
+import itemsService from "../services/itemsService.js";
 
 
 
@@ -52,6 +53,7 @@ export default {
         characterChoice(name) {
             character.choose(name)
             router.push('/game/14')
+            itemsService.initialisation()
         }
     }
 }

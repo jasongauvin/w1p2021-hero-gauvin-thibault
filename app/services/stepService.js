@@ -30,6 +30,7 @@ class Step {
   getSteps() {
     return JSON.parse(localStorage.getItem('steps'));
   }
+  
 }
 
 module.exports = new Step();

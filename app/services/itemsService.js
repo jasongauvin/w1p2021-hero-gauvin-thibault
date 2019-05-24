@@ -19,6 +19,22 @@ class items {
       localStorage.setItem('items', JSON.stringify(this.item));
 
   }
+
+  initialisation(){
+    this.item = { 
+      "sword": 0, 
+      "sick" : 0, 
+      "shield" : 0, 
+      "money" : 0,
+      "thief": 0,
+      "rune1": 0,
+      "rune2": 0,
+      "rune3": 0,
+      "rune4": 0
+      };
+      localStorage.setItem('items', JSON.stringify(this.item));
+  }
+  
   update(item) { // ecrire
     this.item.sword += item.sword;
     this.item.sick += item.sick;

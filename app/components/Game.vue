@@ -22,7 +22,8 @@
     </div>
 
     <section class="charstat">
-      <img src="../assets/images/coco/Bitmap.png" alt="character">
+      <img v-if="character === 'José'" src="../assets/images/coco/Bitmap.png" alt="">
+      <img v-if="character === 'Joséphine'" src="../assets/images/coco/Bitmap2.png" alt="">
       <ul class="stat">
         <li>
           <img v-if="items.sword >= 1" src="../assets/images/coco/sword.png" alt="">
@@ -136,7 +137,11 @@
   justify-content: space-around;
   align-items: center
 }
-
+.text{
+  .button{
+    font-size: 15px;
+  }
+}
 .money{
   background-color: black;
   display: flex;
@@ -194,6 +199,13 @@ export default {
         this.images = map.create(this.$route.params.id).map(image => require(image));
       }, 200);
     }, */
+    deadControl() {
+      let step = localStorage.getItem('step')
+      let characterName = localStorage.getItem('character')
+      let deadStep = data.steps.dead[this.$route.params.id]
+      console.log('deadStep: ', deadStep);
+      return
+    },
     characterChoice() {
 
       let questions = data.steps[this.$route.params.id]
@@ -208,7 +220,10 @@ export default {
         result.push(question)
 
       });
+      console.log(localStorage.getItem('steps'))
+      if (JSON.parse(localStorage.getItem('items')).sword === 0) {
 
+      }
       return result 
     },
 
@@ -219,7 +234,50 @@ export default {
     itemChoice(items, link) {
       console.log('items: ', items);
       itemsService.update(items);
-      this.$router.push(link);
+      
+      const futureCase = link.replace('/game/', '')
+      const deaths = {
+        noSword: [9, 3],
+        noSwordNoShield: [15, 21], 
+        oneThief: [7, 18]
+      }
+      const victory = {
+        case: 12,
+        runes: [
+          'rune1',
+          'rune2',
+          'rune3',
+          'rune4'
+        ]
+      }
+      let isDead = false
+      const parsedItems = JSON.parse(localStorage.getItem('items'))
+      const itemsSword = parsedItems.sword;
+      const itemsShield = parsedItems.shield;
+      const itemsThief = parsedItems.thief;
+      deaths.noSword.map(x => {
+        if (itemsSword == 0 && x == futureCase) {
+          isDead = true;
+        }
+      })
+      deaths.noSwordNoShield.map(x => {
+        if (itemsSword == 0 || 
+            itemsShield == 0) {
+              if (x == futureCase) isDead = true;          
+        }
+      })
+      deaths.oneThief.map(x => {
+        if (itemsThief > 1 &&
+            x == futureCase) {
+          isDead = true;
+        }
+      })
+      victory.runes.map(rune => {
+        if (parsedItems[`${rune}`] === 1) {
+          if (futureCase == victory.case) link = '/win';
+        }
+      })
+      this.$router.push(isDead ? '/lose' : link);
     }
 /*     getStep(){
       return data.steps.find(
@@ -236,3 +294,4 @@ export default {
 };
 
 </script>
+

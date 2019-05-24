@@ -14859,6 +14859,12 @@ module.exports = {
   "home": {
     "image": "/images/coco/home.gif"
   },
+  "dead": {
+    "4": {
+      "condition": "sword",
+      "message": "T'es mort"
+    }
+  },
   "steps": {
     "0": {
       "music": {
@@ -16098,8 +16104,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16163,8 +16169,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16616,8 +16622,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16666,8 +16672,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16845,8 +16851,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16910,8 +16916,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -17333,8 +17339,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -17383,8 +17389,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": -30,
+            "shield": 1,
+            "money": -20,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -17549,7 +17555,7 @@ module.exports = {
             "sick": 0,
             "shield": 0,
             "money": 0,
-            "thief": 0,
+            "thief": 1,
             "rune1": 0,
             "rune2": 0,
             "rune3": 0,
@@ -17599,7 +17605,7 @@ module.exports = {
             "sick": 0,
             "shield": 0,
             "money": 0,
-            "thief": 0,
+            "thief": 1,
             "rune1": 0,
             "rune2": 0,
             "rune3": 0,
@@ -18189,6 +18195,80 @@ function () {
 }();
 
 module.exports = new Character();
+},{}],"services/itemsService.js":[function(require,module,exports) {
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/**
+ *
+ * Class pour link les items entre l'id et le .json concerné
+ * @class items 
+ */
+var items =
+/*#__PURE__*/
+function () {
+  function items() {
+    _classCallCheck(this, items);
+
+    this.item = JSON.parse(localStorage.getItem('items')) || {
+      "sword": 0,
+      "sick": 0,
+      "shield": 0,
+      "money": 0,
+      "thief": 0,
+      "rune1": 0,
+      "rune2": 0,
+      "rune3": 0,
+      "rune4": 0
+    };
+    localStorage.setItem('items', JSON.stringify(this.item));
+  }
+
+  _createClass(items, [{
+    key: "initialisation",
+    value: function initialisation() {
+      this.item = {
+        "sword": 0,
+        "sick": 0,
+        "shield": 0,
+        "money": 0,
+        "thief": 0,
+        "rune1": 0,
+        "rune2": 0,
+        "rune3": 0,
+        "rune4": 0
+      };
+      localStorage.setItem('items', JSON.stringify(this.item));
+    }
+  }, {
+    key: "update",
+    value: function update(item) {
+      // ecrire
+      this.item.sword += item.sword;
+      this.item.sick += item.sick;
+      this.item.shield += item.shield;
+      this.item.money += item.money;
+      this.item.thief += item.thief;
+      this.item.rune1 += item.rune1;
+      this.item.rune2 += item.rune2;
+      this.item.rune3 += item.rune3;
+      this.item.rune4 += item.rune4;
+      localStorage.setItem('items', JSON.stringify(this.item));
+    }
+  }, {
+    key: "getItems",
+    value: function getItems() {
+      return JSON.parse(localStorage.getItem('items'));
+    }
+  }]);
+
+  return items;
+}();
+
+module.exports = new items();
 },{}],"components/Character.vue":[function(require,module,exports) {
 "use strict";
 
@@ -18200,6 +18280,8 @@ exports.default = void 0;
 var _router = _interopRequireDefault(require("../router.js"));
 
 var _characterService = _interopRequireDefault(require("../services/characterService.js"));
+
+var _itemsService = _interopRequireDefault(require("../services/itemsService.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18252,6 +18334,8 @@ var _default = {
       _characterService.default.choose(name);
 
       _router.default.push('/game/14');
+
+      _itemsService.default.initialisation();
     }
   }
 };
@@ -18321,7 +18405,7 @@ render._withStripped = true
       
       }
     })();
-},{"../router.js":"router.js","../services/characterService.js":"services/characterService.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Characters.vue":[function(require,module,exports) {
+},{"../router.js":"router.js","../services/characterService.js":"services/characterService.js","../services/itemsService.js":"services/itemsService.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Characters.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18540,65 +18624,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Character.vue":"components/Character.vue","../../data.json":"../data.json","./../assets/images/coco/character.gif":[["character.896be5be.gif","assets/images/coco/character.gif"],"assets/images/coco/character.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"services/itemsService.js":[function(require,module,exports) {
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-/**
- *
- * Class pour link les items entre l'id et le .json concerné
- * @class items 
- */
-var items =
-/*#__PURE__*/
-function () {
-  function items() {
-    _classCallCheck(this, items);
-
-    this.item = JSON.parse(localStorage.getItem('items')) || {
-      "sword": 0,
-      "sick": 0,
-      "shield": 0,
-      "money": 0,
-      "thief": 0,
-      "rune1": 0,
-      "rune2": 0,
-      "rune3": 0,
-      "rune4": 0
-    };
-    localStorage.setItem('items', JSON.stringify(this.item));
-  }
-
-  _createClass(items, [{
-    key: "update",
-    value: function update(item) {
-      // ecrire
-      this.item.sword += item.sword;
-      this.item.sick += item.sick;
-      this.item.shield += item.shield;
-      this.item.money += item.money;
-      this.item.thief += item.thief;
-      this.item.rune1 += item.rune1;
-      this.item.rune2 += item.rune2;
-      this.item.rune3 += item.rune3;
-      this.item.rune4 += item.rune4;
-      localStorage.setItem('items', JSON.stringify(this.item));
-    }
-  }, {
-    key: "getItems",
-    value: function getItems() {
-      return JSON.parse(localStorage.getItem('items'));
-    }
-  }]);
-
-  return items;
-}();
-
-module.exports = new items();
-},{}],"components/Game.vue":[function(require,module,exports) {
+},{"./Character.vue":"components/Character.vue","../../data.json":"../data.json","./../assets/images/coco/character.gif":[["character.896be5be.gif","assets/images/coco/character.gif"],"assets/images/coco/character.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Game.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18616,6 +18642,11 @@ var _stepService = _interopRequireDefault(require("../services/stepService.js"))
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18803,6 +18834,13 @@ var _default = {
             this.images = map.create(this.$route.params.id).map(image => require(image));
           }, 200);
         }, */
+    deadControl: function deadControl() {
+      var step = localStorage.getItem('step');
+      var characterName = localStorage.getItem('character');
+      var deadStep = _data2.default.steps.dead[this.$route.params.id];
+      console.log('deadStep: ', deadStep);
+      return;
+    },
     characterChoice: function characterChoice() {
       var questions = _data2.default.steps[this.$route.params.id];
       var result = [];
@@ -18817,6 +18855,10 @@ var _default = {
       questions.forEach(function (question) {
         result.push(question);
       });
+      console.log(localStorage.getItem('steps'));
+
+      if (JSON.parse(localStorage.getItem('items')).sword === 0) {}
+
       return result;
     },
     setStep: function setStep() {
@@ -18829,7 +18871,42 @@ var _default = {
 
       _itemsService.default.update(items);
 
-      this.$router.push(link);
+      var futureCase = link.replace('/game/', '');
+      var deaths = {
+        noSword: [9, 3],
+        noSwordNoShield: [15, 21],
+        oneThief: [7, 18]
+      };
+      var victory = {
+        case: 12,
+        runes: ['rune1', 'rune2', 'rune3', 'rune4']
+      };
+      var isDead = false;
+      var parsedItems = JSON.parse(localStorage.getItem('items'));
+      var itemsSword = parsedItems.sword;
+      var itemsShield = parsedItems.shield;
+      var itemsThief = parsedItems.thief;
+      deaths.noSword.map(function (x) {
+        if (itemsSword == 0 && x == futureCase) {
+          isDead = true;
+        }
+      });
+      deaths.noSwordNoShield.map(function (x) {
+        if (itemsSword == 0 || itemsShield == 0) {
+          if (x == futureCase) isDead = true;
+        }
+      });
+      deaths.oneThief.map(function (x) {
+        if (itemsThief > 1 && x == futureCase) {
+          isDead = true;
+        }
+      });
+      victory.runes.map(function (rune) {
+        if (parsedItems["".concat(rune)] === 1) {
+          if (futureCase == victory.case) link = '/win';
+        }
+      });
+      this.$router.push(isDead ? '/lose' : link);
     }
     /*     getStep(){
           return data.steps.find(
@@ -18896,12 +18973,17 @@ exports.default = _default;
       ),
       _vm._v(" "),
       _c("section", { staticClass: "charstat" }, [
-        _c("img", {
-          attrs: {
-            src: "/Bitmap.f95cc058.png",
-            alt: "character"
-          }
-        }),
+        _vm.character === "José"
+          ? _c("img", {
+              attrs: { src: "/Bitmap.f95cc058.png", alt: "" }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.character === "Joséphine"
+          ? _c("img", {
+              attrs: { src: "/Bitmap2.4166ee13.png", alt: "" }
+            })
+          : _vm._e(),
         _vm._v(" "),
         _c("ul", { staticClass: "stat" }, [
           _c("li", [
@@ -19096,7 +19178,7 @@ render._withStripped = true
       
       }
     })();
-},{"../../data.json":"../data.json","../services/itemsService.js":"services/itemsService.js","../services/characterService.js":"services/characterService.js","../services/stepService.js":"services/stepService.js","./../assets/images/coco/Bitmap.png":[["Bitmap.f95cc058.png","assets/images/coco/Bitmap.png"],"assets/images/coco/Bitmap.png"],"./../assets/images/coco/sword.png":[["sword.e8e1a60a.png","assets/images/coco/sword.png"],"assets/images/coco/sword.png"],"./../assets/images/coco/sword_gris.png":[["sword_gris.60a5a096.png","assets/images/coco/sword_gris.png"],"assets/images/coco/sword_gris.png"],"./../assets/images/coco/shield.png":[["shield.2a388c5f.png","assets/images/coco/shield.png"],"assets/images/coco/shield.png"],"./../assets/images/coco/shield_gris.png":[["shield_gris.dc5aedd8.png","assets/images/coco/shield_gris.png"],"assets/images/coco/shield_gris.png"],"./../assets/images/coco/thief.png":[["thief.64d54678.png","assets/images/coco/thief.png"],"assets/images/coco/thief.png"],"./../assets/images/coco/thief_gris.png":[["thief_gris.7fe8a1c4.png","assets/images/coco/thief_gris.png"],"assets/images/coco/thief_gris.png"],"./../assets/images/coco/rune1.png":[["rune1.1c37c022.png","assets/images/coco/rune1.png"],"assets/images/coco/rune1.png"],"./../assets/images/coco/rune1_gris.png":[["rune1_gris.f0f70f21.png","assets/images/coco/rune1_gris.png"],"assets/images/coco/rune1_gris.png"],"./../assets/images/coco/rune2.png":[["rune2.681f711e.png","assets/images/coco/rune2.png"],"assets/images/coco/rune2.png"],"./../assets/images/coco/rune2_gris.png":[["rune2_gris.4f1ea224.png","assets/images/coco/rune2_gris.png"],"assets/images/coco/rune2_gris.png"],"./../assets/images/coco/rune3.png":[["rune3.6ccac5f6.png","assets/images/coco/rune3.png"],"assets/images/coco/rune3.png"],"./../assets/images/coco/rune3_gris.png":[["rune3_gris.51ddc3aa.png","assets/images/coco/rune3_gris.png"],"assets/images/coco/rune3_gris.png"],"./../assets/images/coco/rune4.png":[["rune4.45cd6663.png","assets/images/coco/rune4.png"],"assets/images/coco/rune4.png"],"./../assets/images/coco/rune4_gris.png":[["rune4_gris.aac17690.png","assets/images/coco/rune4_gris.png"],"assets/images/coco/rune4_gris.png"],"./../assets/images/coco/coin.png":[["coin.0ac31016.png","assets/images/coco/coin.png"],"assets/images/coco/coin.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
+},{"../../data.json":"../data.json","../services/itemsService.js":"services/itemsService.js","../services/characterService.js":"services/characterService.js","../services/stepService.js":"services/stepService.js","./../assets/images/coco/Bitmap.png":[["Bitmap.f95cc058.png","assets/images/coco/Bitmap.png"],"assets/images/coco/Bitmap.png"],"./../assets/images/coco/Bitmap2.png":[["Bitmap2.4166ee13.png","assets/images/coco/Bitmap2.png"],"assets/images/coco/Bitmap2.png"],"./../assets/images/coco/sword.png":[["sword.e8e1a60a.png","assets/images/coco/sword.png"],"assets/images/coco/sword.png"],"./../assets/images/coco/sword_gris.png":[["sword_gris.60a5a096.png","assets/images/coco/sword_gris.png"],"assets/images/coco/sword_gris.png"],"./../assets/images/coco/shield.png":[["shield.2a388c5f.png","assets/images/coco/shield.png"],"assets/images/coco/shield.png"],"./../assets/images/coco/shield_gris.png":[["shield_gris.dc5aedd8.png","assets/images/coco/shield_gris.png"],"assets/images/coco/shield_gris.png"],"./../assets/images/coco/thief.png":[["thief.64d54678.png","assets/images/coco/thief.png"],"assets/images/coco/thief.png"],"./../assets/images/coco/thief_gris.png":[["thief_gris.7fe8a1c4.png","assets/images/coco/thief_gris.png"],"assets/images/coco/thief_gris.png"],"./../assets/images/coco/rune1.png":[["rune1.1c37c022.png","assets/images/coco/rune1.png"],"assets/images/coco/rune1.png"],"./../assets/images/coco/rune1_gris.png":[["rune1_gris.f0f70f21.png","assets/images/coco/rune1_gris.png"],"assets/images/coco/rune1_gris.png"],"./../assets/images/coco/rune2.png":[["rune2.681f711e.png","assets/images/coco/rune2.png"],"assets/images/coco/rune2.png"],"./../assets/images/coco/rune2_gris.png":[["rune2_gris.4f1ea224.png","assets/images/coco/rune2_gris.png"],"assets/images/coco/rune2_gris.png"],"./../assets/images/coco/rune3.png":[["rune3.6ccac5f6.png","assets/images/coco/rune3.png"],"assets/images/coco/rune3.png"],"./../assets/images/coco/rune3_gris.png":[["rune3_gris.51ddc3aa.png","assets/images/coco/rune3_gris.png"],"assets/images/coco/rune3_gris.png"],"./../assets/images/coco/rune4.png":[["rune4.45cd6663.png","assets/images/coco/rune4.png"],"assets/images/coco/rune4.png"],"./../assets/images/coco/rune4_gris.png":[["rune4_gris.aac17690.png","assets/images/coco/rune4_gris.png"],"assets/images/coco/rune4_gris.png"],"./../assets/images/coco/coin.png":[["coin.0ac31016.png","assets/images/coco/coin.png"],"assets/images/coco/coin.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19547,7 +19629,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58503" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54777" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
