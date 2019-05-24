@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/scss/styles.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/scss/import.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/scss/import.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -18920,26 +18915,22 @@ var _default = {
       var itemsThief = parsedItems.thief;
       deaths.noSword.map(function (x) {
         if (itemsSword == 0 && x == futureCase) {
-          isDead = true;
-          alert("Et bah oui banane ! C'est pas très malin d'aller affronter des monstres sans épée !");
+          isDead = true; //alert("Et bah oui banane ! C'est pas très malin d'aller affronter des monstres sans épée !")
         }
       });
       deaths.noSwordNoShield.map(function (x) {
         if (itemsSword == 0 || itemsShield == 0) {
-          if (x == futureCase) isDeadx = true;
-          alert("Gros nul ! Pour l'épée on dit trop rien mais là, sans bouclier : C'est vraiment pas très malin !");
+          if (x == futureCase) isDeadx = true; //alert("Gros nul ! Pour l'épée on dit trop rien mais là, sans bouclier : C'est vraiment pas très malin !")          
         }
       });
       deaths.oneThief.map(function (x) {
         if (itemsThief > 1 && x == futureCase) {
-          isDead = true;
-          alert("Un copain c'est bien, mais tu connais le dicton : Trop bon, trop mort !");
+          isDead = true; //alert("Un copain c'est bien, mais tu connais le dicton : Trop bon, trop mort !")
         }
       });
       victory.runes.map(function (rune) {
         if (parsedItems["".concat(rune)] === 1) {
-          if (futureCase == victory.case) link = '/win';
-          alert("Et bah voilà ! C'était pas compliqué ! Maintenant, rejoins la case sortie !");
+          if (futureCase == victory.case) link = '/win'; //alert("Et bah voilà ! C'était pas compliqué ! Maintenant, rejoins la case sortie !")
         }
       });
       this.$router.push(isDead ? '/lose' : link);
@@ -19698,8 +19689,6 @@ exports.default = _default;
 },{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Characters.vue":"components/Characters.vue","./components/Character.vue":"components/Character.vue","./components/Game.vue":"components/Game.vue","./components/Win.vue":"components/Win.vue","./components/Lose.vue":"components/Lose.vue","./components/Test.vue":"components/Test.vue"}],"app.js":[function(require,module,exports) {
 "use strict";
 
-require("./assets/scss/styles.scss");
-
 require("./assets/scss/import.scss");
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -19711,7 +19700,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 new _vue.default({
   router: _router.default
 }).$mount('#root');
-},{"./assets/scss/styles.scss":"assets/scss/styles.scss","./assets/scss/import.scss":"assets/scss/import.scss","vue":"../node_modules/vue/dist/vue.common.js","./router":"router.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./assets/scss/import.scss":"assets/scss/import.scss","vue":"../node_modules/vue/dist/vue.common.js","./router":"router.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
