@@ -14,7 +14,7 @@ Si la rage , la colère , l’égarement ou l’insatisfaction s’empare de vou
 
 Bon courage !
 
-- URL du site : https://dharma.netlify.com/
+- URL du site : https://dungeon-rush.netlify.com/
 
 ### Groupe
 
