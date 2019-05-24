@@ -213,6 +213,32 @@ textarea {
   color: black;
 }
 
+.buttonsound {
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Rubber Biscuit";
+  font-weight: bold;
+  color: gold;
+  font-size: 20px;
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  border: 5px solid goldenrod;
+  border-radius: 5px;
+}
+.buttonsound .sound {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* *{
   box-sizing: border-box;
 }
@@ -657,6 +683,32 @@ textarea {
   color: black;
 }
 
+.buttonsound {
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Rubber Biscuit";
+  font-weight: bold;
+  color: gold;
+  font-size: 20px;
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  border: 5px solid goldenrod;
+  border-radius: 5px;
+}
+.buttonsound .sound {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* *{
   box-sizing: border-box;
 }
@@ -826,6 +878,12 @@ article .test {
   font-size: 20px;
   line-height: 180%;
 }
+article img {
+  cursor: pointer;
+}
+article div {
+  cursor: pointer;
+}
 .big-header[data-v-611926] {
   width: 940px;
   height: 940px;
@@ -862,6 +920,11 @@ h1[data-v-611926] {
   height: 530px;
   left: 940px;
   top: 270px;
+  text-align: center;
+  font-family: "Rubber Biscuit";
+  font-weight: bold;
+  color: gold;
+  font-size: 20px;
 }
 .text[data-v-611926] {
   background-color: black;
@@ -968,6 +1031,62 @@ h1[data-v-611926] {
   font-weight: bold;
   color: gold;
   font-size: 50px;
+}
+.big-header[data-v-9fe014] {
+  width: 100VW;
+  height: 100VH;
+  background-image: url(/final.11753bcd.gif);
+  background-size: 100% 160%;
+  background-position: 50% 50%;
+  position: relative;
+}
+.big-header h1[data-v-9fe014] {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 300px;
+  top: 0px;
+  position: absolute;
+  padding: 120px;
+  line-height: 140%;
+  text-align: center;
+  font-family: "Rubber Biscuit";
+  font-weight: bold;
+  color: gold;
+  font-size: 100px;
+}
+.big-header .button[data-v-9fe014] {
+  position: absolute;
+  top: 550px;
+}
+.big-header[data-v-9d8b9c] {
+  width: 100VW;
+  height: 100VH;
+  background-image: url(/die.b3738c41.gif);
+  background-size: 100% 100%;
+  background-position: 50% 10%;
+  position: relative;
+}
+.big-header h1[data-v-9d8b9c] {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 300px;
+  top: 0px;
+  position: absolute;
+  padding: 120px;
+  line-height: 140%;
+  text-align: center;
+  font-family: "Rubber Biscuit";
+  font-weight: bold;
+  color: gold;
+  font-size: 200px;
+}
+.big-header .button[data-v-9d8b9c] {
+  position: absolute;
+  top: 700px;
 }
 .big-header[data-v-9f37ae] {
   background-size: cover;

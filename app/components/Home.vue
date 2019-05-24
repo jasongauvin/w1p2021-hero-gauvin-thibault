@@ -8,8 +8,8 @@
     <div class="text">
       <router-link class="button" to="/characters">Choisir un personnage</router-link>
       <router-link class="button" :to="'/game/' + getStep()">Reprendre</router-link>
-
-    </div>
+    
+    <audio src="../assets/images/sound/cladun.mp3" autoplay loop ref="audio"></audio>
     
   </div>
 </template>
@@ -80,21 +80,28 @@ justify-content: center;
 <script>
 import step from "../services/stepService.js";
 import data from "../../data.json";
-
+/* import Sound from "../services/soundService";
+ */
 
 export default {
   data() {
     return {
       message: "DUNGEON RUSH",
-      description :'Vous êtes retenu prisionier dans ce dojon de 25 pièces vous devez trouver les 4 runes répendu a ses quatres coins. Mais attention, des embuches se trouveront sur votre chemin !',
-      image: data.home.image, 
-
+      description :'Vous êtes retenu prisonier dans ce donjon de 25 pièces vous devez trouver les 4 runes répendu a ses quatres coins. Mais attention, des embuches se trouveront sur votre chemin !',
+      image: data.home.image,
+      sound: data.home.music.src,
+      soundIcon: "sound-icon",
     };
   },
   methods: {
     getStep() {
       return step.get();
-    }
+    },
+  },
+  mounted(){
+    setTimeout(() => {
+      this.$refs.audio.pause();
+    }, 2000)
   }
 };
 </script>

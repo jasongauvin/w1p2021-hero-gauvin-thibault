@@ -14857,7 +14857,12 @@ module.exports = {
     "image": "/images/coco/character.gif"
   },
   "home": {
-    "image": "/images/coco/home.gif"
+    "image": "/images/coco/home.gif",
+    "music": {
+      "src": "/assets/images/sound/cladun.mp3",
+      "volume": 1,
+      "loop": true
+    }
   },
   "dead": {
     "4": {
@@ -14891,14 +14896,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "voir un mendiant",
+          "message": "ramasser une bourse",
           "transition": "bottom",
           "link": "/game/5",
           "items": {
             "sword": 0,
             "sick": 0,
             "shield": 0,
-            "money": -5,
+            "money": 10,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -14926,14 +14931,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "voir un mendiant",
+          "message": "ramasser une bourse",
           "transition": "bottom",
           "link": "/game/5",
           "items": {
             "sword": 0,
             "sick": 0,
             "shield": 0,
-            "money": -50,
+            "money": 10,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -15349,7 +15354,7 @@ module.exports = {
       "image": "/images/maps/5.png",
       "José": {
         "name": "José",
-        "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
+        "message": "Super une bourse de 10 pièces, que voulez vous faire",
         "answers": [{
           "message": "vers une rune",
           "transition": "left",
@@ -15366,14 +15371,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "ramasser une bourse",
+          "message": "aller voir un marchand",
           "transition": "right",
           "link": "/game/10",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": 10,
+            "shield": 1,
+            "money": -30,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -15399,7 +15404,7 @@ module.exports = {
       },
       "Joséphine": {
         "name": "Joséphine",
-        "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
+        "message": "Super une bourse de 10 pièces, que voulez vous faire",
         "answers": [{
           "message": "vers une rune",
           "transition": "left",
@@ -15416,14 +15421,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "ramasser une bourse",
+          "message": "aller voir un marchand",
           "transition": "right",
           "link": "/game/10",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": 10,
+            "shield": 1,
+            "money": -30,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -15458,14 +15463,14 @@ module.exports = {
         "name": "José",
         "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
         "answers": [{
-          "message": "aller voir un mendiant",
+          "message": "ramasser une bourse",
           "transition": "top",
           "link": "/game/5",
           "items": {
             "sword": 0,
             "sick": 0,
             "shield": 0,
-            "money": -5,
+            "money": 10,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -15490,7 +15495,7 @@ module.exports = {
         }, {
           "message": "aller boire une potion",
           "transition": "right",
-          "link": "/game/11",
+          "link": "/lose",
           "items": {
             "sword": 0,
             "sick": 0,
@@ -15523,14 +15528,14 @@ module.exports = {
         "name": "Joséphine",
         "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
         "answers": [{
-          "message": "aller voir un mendiant",
+          "message": "ramasser une bourse",
           "transition": "top",
           "link": "/game/5",
           "items": {
             "sword": 0,
             "sick": 0,
             "shield": 0,
-            "money": -5,
+            "money": 10,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -15974,16 +15979,16 @@ module.exports = {
       "image": "/images/maps/10.png",
       "José": {
         "name": "José",
-        "message": "Super une bourse de 10 pièces, que voulez vous faire",
+        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
         "answers": [{
-          "message": "aller voir un mendiant",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/5",
           "items": {
             "sword": 0,
             "sick": 0,
             "shield": 0,
-            "money": -5,
+            "money": 10,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16008,7 +16013,7 @@ module.exports = {
         }, {
           "message": "boire une potion",
           "transition": "bottom",
-          "link": "/game/11",
+          "link": "/lose",
           "items": {
             "sword": 0,
             "sick": 0,
@@ -16024,16 +16029,16 @@ module.exports = {
       },
       "Joséphine": {
         "name": "Joséphine",
-        "message": "Super une bourse de 10 pièces, que voulez vous faire",
+        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
         "answers": [{
-          "message": "aller voir un mendiant",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/5",
           "items": {
             "sword": 0,
             "sick": 0,
             "shield": 0,
-            "money": -5,
+            "money": 10,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16098,14 +16103,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "un marchand",
+          "message": "aller voir un mendiant",
           "transition": "right",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16113,14 +16118,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "aller voir un marchand",
           "transition": "top",
-          "link": "/game/13",
+          "link": "/game/10",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": 10,
+            "shield": 1,
+            "money": -30,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16163,14 +16168,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "aller voir un marchand",
+          "message": "aller voir un mendiant",
           "transition": "right",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16178,14 +16183,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "ramasser une bourse",
+          "message": "aller voir un marchand",
           "transition": "top",
-          "link": "/game/13",
+          "link": "/game/10",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": 10,
+            "shield": 1,
+            "money": -30,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16237,7 +16242,7 @@ module.exports = {
         }, {
           "message": "boire une potion",
           "transition": "top",
-          "link": "/game/11",
+          "link": "/lose",
           "items": {
             "sword": 0,
             "sick": 0,
@@ -16332,7 +16337,7 @@ module.exports = {
         }, {
           "message": "caresser un petit chien",
           "transition": "right",
-          "link": "/game/17",
+          "link": "/lose",
           "items": {
             "sword": 0,
             "sick": 0,
@@ -16601,14 +16606,14 @@ module.exports = {
         "name": "José",
         "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
         "answers": [{
-          "message": "ramasser une bourse",
+          "message": "aller voir un marchand",
           "transition": "left",
           "link": "/game/10",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": 10,
+            "shield": 1,
+            "money": -30,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16616,14 +16621,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "aller voir un marchand",
+          "message": "aller voir un mendiant",
           "transition": "bottom",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16651,14 +16656,14 @@ module.exports = {
         "name": "Joséphine",
         "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
         "answers": [{
-          "message": "ramasser une bourse",
+          "message": "aller voir un marchand",
           "transition": "left",
           "link": "/game/10",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 0,
-            "money": 10,
+            "shield": 1,
+            "money": -30,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16666,14 +16671,14 @@ module.exports = {
             "rune4": 0
           }
         }, {
-          "message": "aller voir un marchand",
+          "message": "aller voir un mendiant",
           "transition": "bottom",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16706,11 +16711,11 @@ module.exports = {
       "image": "/images/maps/16.png",
       "José": {
         "name": "José",
-        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
+        "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
         "answers": [{
           "message": "boire une potion",
           "transition": "left",
-          "link": "/game/11",
+          "link": "/lose",
           "items": {
             "sword": 0,
             "sick": 0,
@@ -16771,7 +16776,7 @@ module.exports = {
       },
       "Joséphine": {
         "name": "Joséphine",
-        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
+        "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
         "answers": [{
           "message": "boire une potion",
           "transition": "left",
@@ -16851,8 +16856,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -16877,7 +16882,7 @@ module.exports = {
         }, {
           "message": "visiter une stèle étrange",
           "transition": " left",
-          "link": "/game/13",
+          "link": "/game/12",
           "items": {
             "sword": 0,
             "sick": 0,
@@ -16910,14 +16915,14 @@ module.exports = {
         "name": "Joséphine",
         "message": "Un petit chien, vous le caressez mais il vous mord , il avait la rage...",
         "answers": [{
-          "message": "un marchand",
+          "message": "aller voir un mendiant",
           "transition": "top",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -17339,8 +17344,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -17389,8 +17394,8 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
-            "money": -20,
+            "shield": 0,
+            "money": -5,
             "thief": 0,
             "rune1": 0,
             "rune2": 0,
@@ -18060,18 +18065,30 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+
+/* import Sound from "../services/soundService";
+ */
 var _default = {
   data: function data() {
     return {
       message: "DUNGEON RUSH",
-      description: 'Vous êtes retenu prisionier dans ce dojon de 25 pièces vous devez trouver les 4 runes répendu a ses quatres coins. Mais attention, des embuches se trouveront sur votre chemin !',
-      image: _data2.default.home.image
+      description: 'Vous êtes retenu prisonier dans ce donjon de 25 pièces vous devez trouver les 4 runes répendu a ses quatres coins. Mais attention, des embuches se trouveront sur votre chemin !',
+      image: _data2.default.home.image,
+      sound: _data2.default.home.music.src,
+      soundIcon: "sound-icon"
     };
   },
   methods: {
     getStep: function getStep() {
       return _stepService.default.get();
     }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    setTimeout(function () {
+      _this.$refs.audio.pause();
+    }, 2000);
   }
 };
 exports.default = _default;
@@ -18108,7 +18125,16 @@ exports.default = _default;
           "router-link",
           { staticClass: "button", attrs: { to: "/game/" + _vm.getStep() } },
           [_vm._v("Reprendre")]
-        )
+        ),
+        _vm._v(" "),
+        _c("audio", {
+          ref: "audio",
+          attrs: {
+            src: "/cladun.2f0b667c.mp3",
+            autoplay: "",
+            loop: ""
+          }
+        })
       ],
       1
     )
@@ -18147,7 +18173,7 @@ render._withStripped = true
       
       }
     })();
-},{"../services/stepService.js":"services/stepService.js","../../data.json":"../data.json","./../assets/images/coco/home.gif":[["home.f5544c19.gif","assets/images/coco/home.gif"],"assets/images/coco/home.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"services/characterService.js":[function(require,module,exports) {
+},{"../services/stepService.js":"services/stepService.js","../../data.json":"../data.json","./../assets/images/sound/cladun.mp3":[["cladun.2f0b667c.mp3","assets/images/sound/cladun.mp3"],"assets/images/sound/cladun.mp3"],"./../assets/images/coco/home.gif":[["home.f5544c19.gif","assets/images/coco/home.gif"],"assets/images/coco/home.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"services/characterService.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -18285,6 +18311,12 @@ var _itemsService = _interopRequireDefault(require("../services/itemsService.js"
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18507,6 +18539,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
@@ -18579,13 +18615,7 @@ exports.default = _default;
       [
         _c("router-link", { staticClass: "button", attrs: { to: "/home" } }, [
           _vm._v("Retour")
-        ]),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          { staticClass: "button", attrs: { to: "/game/14" } },
-          [_vm._v("Play")]
-        )
+        ])
       ],
       1
     )
@@ -18642,6 +18672,8 @@ var _stepService = _interopRequireDefault(require("../services/stepService.js"))
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
 //
 //
 //
@@ -18889,21 +18921,25 @@ var _default = {
       deaths.noSword.map(function (x) {
         if (itemsSword == 0 && x == futureCase) {
           isDead = true;
+          alert("Et bah oui banane ! C'est pas très malin d'aller affronter des monstres sans épée !");
         }
       });
       deaths.noSwordNoShield.map(function (x) {
         if (itemsSword == 0 || itemsShield == 0) {
-          if (x == futureCase) isDead = true;
+          if (x == futureCase) isDeadx = true;
+          alert("Gros nul ! Pour l'épée on dit trop rien mais là, sans bouclier : C'est vraiment pas très malin !");
         }
       });
       deaths.oneThief.map(function (x) {
         if (itemsThief > 1 && x == futureCase) {
           isDead = true;
+          alert("Un copain c'est bien, mais tu connais le dicton : Trop bon, trop mort !");
         }
       });
       victory.runes.map(function (rune) {
         if (parsedItems["".concat(rune)] === 1) {
           if (futureCase == victory.case) link = '/win';
+          alert("Et bah voilà ! C'était pas compliqué ! Maintenant, rejoins la case sortie !");
         }
       });
       this.$router.push(isDead ? '/lose' : link);
@@ -18941,6 +18977,10 @@ exports.default = _default;
       style: { backgroundImage: "url(" + _vm.image + ")" }
     },
     [
+      _c("audio", {
+        attrs: { src: "/cladun.2f0b667c.mp3", autoplay: "" }
+      }),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "text" },
@@ -19178,7 +19218,7 @@ render._withStripped = true
       
       }
     })();
-},{"../../data.json":"../data.json","../services/itemsService.js":"services/itemsService.js","../services/characterService.js":"services/characterService.js","../services/stepService.js":"services/stepService.js","./../assets/images/coco/Bitmap.png":[["Bitmap.f95cc058.png","assets/images/coco/Bitmap.png"],"assets/images/coco/Bitmap.png"],"./../assets/images/coco/Bitmap2.png":[["Bitmap2.4166ee13.png","assets/images/coco/Bitmap2.png"],"assets/images/coco/Bitmap2.png"],"./../assets/images/coco/sword.png":[["sword.e8e1a60a.png","assets/images/coco/sword.png"],"assets/images/coco/sword.png"],"./../assets/images/coco/sword_gris.png":[["sword_gris.60a5a096.png","assets/images/coco/sword_gris.png"],"assets/images/coco/sword_gris.png"],"./../assets/images/coco/shield.png":[["shield.2a388c5f.png","assets/images/coco/shield.png"],"assets/images/coco/shield.png"],"./../assets/images/coco/shield_gris.png":[["shield_gris.dc5aedd8.png","assets/images/coco/shield_gris.png"],"assets/images/coco/shield_gris.png"],"./../assets/images/coco/thief.png":[["thief.64d54678.png","assets/images/coco/thief.png"],"assets/images/coco/thief.png"],"./../assets/images/coco/thief_gris.png":[["thief_gris.7fe8a1c4.png","assets/images/coco/thief_gris.png"],"assets/images/coco/thief_gris.png"],"./../assets/images/coco/rune1.png":[["rune1.1c37c022.png","assets/images/coco/rune1.png"],"assets/images/coco/rune1.png"],"./../assets/images/coco/rune1_gris.png":[["rune1_gris.f0f70f21.png","assets/images/coco/rune1_gris.png"],"assets/images/coco/rune1_gris.png"],"./../assets/images/coco/rune2.png":[["rune2.681f711e.png","assets/images/coco/rune2.png"],"assets/images/coco/rune2.png"],"./../assets/images/coco/rune2_gris.png":[["rune2_gris.4f1ea224.png","assets/images/coco/rune2_gris.png"],"assets/images/coco/rune2_gris.png"],"./../assets/images/coco/rune3.png":[["rune3.6ccac5f6.png","assets/images/coco/rune3.png"],"assets/images/coco/rune3.png"],"./../assets/images/coco/rune3_gris.png":[["rune3_gris.51ddc3aa.png","assets/images/coco/rune3_gris.png"],"assets/images/coco/rune3_gris.png"],"./../assets/images/coco/rune4.png":[["rune4.45cd6663.png","assets/images/coco/rune4.png"],"assets/images/coco/rune4.png"],"./../assets/images/coco/rune4_gris.png":[["rune4_gris.aac17690.png","assets/images/coco/rune4_gris.png"],"assets/images/coco/rune4_gris.png"],"./../assets/images/coco/coin.png":[["coin.0ac31016.png","assets/images/coco/coin.png"],"assets/images/coco/coin.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
+},{"../../data.json":"../data.json","../services/itemsService.js":"services/itemsService.js","../services/characterService.js":"services/characterService.js","../services/stepService.js":"services/stepService.js","./../assets/images/sound/cladun.mp3":[["cladun.2f0b667c.mp3","assets/images/sound/cladun.mp3"],"assets/images/sound/cladun.mp3"],"./../assets/images/coco/Bitmap.png":[["Bitmap.f95cc058.png","assets/images/coco/Bitmap.png"],"assets/images/coco/Bitmap.png"],"./../assets/images/coco/Bitmap2.png":[["Bitmap2.4166ee13.png","assets/images/coco/Bitmap2.png"],"assets/images/coco/Bitmap2.png"],"./../assets/images/coco/sword.png":[["sword.e8e1a60a.png","assets/images/coco/sword.png"],"assets/images/coco/sword.png"],"./../assets/images/coco/sword_gris.png":[["sword_gris.60a5a096.png","assets/images/coco/sword_gris.png"],"assets/images/coco/sword_gris.png"],"./../assets/images/coco/shield.png":[["shield.2a388c5f.png","assets/images/coco/shield.png"],"assets/images/coco/shield.png"],"./../assets/images/coco/shield_gris.png":[["shield_gris.dc5aedd8.png","assets/images/coco/shield_gris.png"],"assets/images/coco/shield_gris.png"],"./../assets/images/coco/thief.png":[["thief.64d54678.png","assets/images/coco/thief.png"],"assets/images/coco/thief.png"],"./../assets/images/coco/thief_gris.png":[["thief_gris.7fe8a1c4.png","assets/images/coco/thief_gris.png"],"assets/images/coco/thief_gris.png"],"./../assets/images/coco/rune1.png":[["rune1.1c37c022.png","assets/images/coco/rune1.png"],"assets/images/coco/rune1.png"],"./../assets/images/coco/rune1_gris.png":[["rune1_gris.f0f70f21.png","assets/images/coco/rune1_gris.png"],"assets/images/coco/rune1_gris.png"],"./../assets/images/coco/rune2.png":[["rune2.681f711e.png","assets/images/coco/rune2.png"],"assets/images/coco/rune2.png"],"./../assets/images/coco/rune2_gris.png":[["rune2_gris.4f1ea224.png","assets/images/coco/rune2_gris.png"],"assets/images/coco/rune2_gris.png"],"./../assets/images/coco/rune3.png":[["rune3.6ccac5f6.png","assets/images/coco/rune3.png"],"assets/images/coco/rune3.png"],"./../assets/images/coco/rune3_gris.png":[["rune3_gris.51ddc3aa.png","assets/images/coco/rune3_gris.png"],"assets/images/coco/rune3_gris.png"],"./../assets/images/coco/rune4.png":[["rune4.45cd6663.png","assets/images/coco/rune4.png"],"assets/images/coco/rune4.png"],"./../assets/images/coco/rune4_gris.png":[["rune4_gris.aac17690.png","assets/images/coco/rune4_gris.png"],"assets/images/coco/rune4_gris.png"],"./../assets/images/coco/coin.png":[["coin.0ac31016.png","assets/images/coco/coin.png"],"assets/images/coco/coin.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19193,10 +19233,41 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
-      message: 'Vous avez gagné'
+      message: 'Vous avez gagne gros nul'
     };
   }
 };
@@ -19235,7 +19306,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: null,
+            _scopeId: "data-v-9fe014",
             functional: undefined
           };
         })());
@@ -19255,9 +19326,13 @@ render._withStripped = true
         }
 
         
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
       }
     })();
-},{"vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Lose.vue":[function(require,module,exports) {
+},{"./../assets/images/coco/final.gif":[["final.11753bcd.gif","assets/images/coco/final.gif"],"assets/images/coco/final.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Lose.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19272,10 +19347,41 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
-      message: 'Vous avez perdu'
+      message: 'GAME OVER GROS NUL'
     };
   }
 };
@@ -19314,7 +19420,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: null,
+            _scopeId: "data-v-9d8b9c",
             functional: undefined
           };
         })());
@@ -19334,9 +19440,13 @@ render._withStripped = true
         }
 
         
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
       }
     })();
-},{"vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Test.vue":[function(require,module,exports) {
+},{"./../assets/images/coco/die.gif":[["die.b3738c41.gif","assets/images/coco/die.gif"],"assets/images/coco/die.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Test.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19629,7 +19739,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57617" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

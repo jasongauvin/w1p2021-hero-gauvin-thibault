@@ -15,7 +15,13 @@
         "image": "/images/coco/character.gif"
     },
     "home": {
-        "image": "/images/coco/home.gif"
+        "image": "/images/coco/home.gif",
+        "music": {
+            "src": "/assets/images/sound/cladun.mp3",
+            "volume": 1,
+            "loop": true
+        }
+
     },
     "dead": {
         "4": {
@@ -23,7 +29,7 @@
                 "message": "T'es mort"
         }
     },
-    "steps": {
+        "steps": {
         "0": {
             "music": {
                 "src": "",
@@ -51,14 +57,14 @@
                         }
                     },
                     {
-                        "message": "voir un mendiant",
+                        "message": "ramasser une bourse",
                         "transition": "bottom",
                         "link": "/game/5",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
                             "shield" : 0,
-                            "money" : -5,
+                            "money" : 10,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -89,14 +95,14 @@
                         }
                     },
                     {
-                        "message": "voir un mendiant",
+                        "message": "ramasser une bourse",
                         "transition": "bottom",
                         "link": "/game/5",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
                             "shield" : 0,
-                            "money" : -50,
+                            "money" : 10,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -543,7 +549,7 @@
             "image": "/images/maps/5.png",
             "José": {
                 "name": "José",
-                "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
+                "message": "Super une bourse de 10 pièces, que voulez vous faire",
                 "answers": [
                     {
                         "message": "vers une rune",
@@ -562,14 +568,14 @@
                         }
                     },
                     {
-                        "message": "ramasser une bourse",
+                        "message": "aller voir un marchand",
                         "transition": "right",
                         "link": "/game/10",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 0,
-                            "money" : 10,
+                            "shield" : 1,
+                            "money" : -30,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -597,7 +603,7 @@
             },
             "Joséphine": {
                 "name": "Joséphine",
-                "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
+                "message": "Super une bourse de 10 pièces, que voulez vous faire",
                 "answers": [
                     {
                         "message": "vers une rune",
@@ -616,14 +622,14 @@
                         }
                     },
                     {
-                        "message": "ramasser une bourse",
+                        "message": "aller voir un marchand",
                         "transition": "right",
                         "link": "/game/10",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 0,
-                            "money" : 10,
+                            "shield" : 1,
+                            "money" : -30,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -661,14 +667,14 @@
                 "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
                 "answers": [
                     {
-                        "message": "aller voir un mendiant",
+                        "message": "ramasser une bourse",
                         "transition": "top",
                         "link": "/game/5",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
                             "shield" : 0,
-                            "money" : -5,
+                            "money" : 10,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -695,7 +701,7 @@
                     {
                         "message": "aller boire une potion",
                         "transition": "right",
-                        "link": "/game/11",
+                        "link": "/lose",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
@@ -731,14 +737,14 @@
                 "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
                 "answers": [
                     {
-                        "message": "aller voir un mendiant",
+                        "message": "ramasser une bourse",
                         "transition": "top",
                         "link": "/game/5",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
                             "shield" : 0,
-                            "money" : -5,
+                            "money" : 10,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1091,7 +1097,7 @@
                 ]
             }
         },
-            "9": {
+         "9": {
             "music": {
                 "src": "",
                 "volume": 0 
@@ -1214,17 +1220,17 @@
             "image": "/images/maps/10.png",
             "José": {
                 "name": "José",
-                "message": "Super une bourse de 10 pièces, que voulez vous faire",
+                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
                 "answers": [
                     {
-                        "message": "aller voir un mendiant",
+                        "message": "ramasser une bourse",
                         "transition": "left",
                         "link": "/game/5",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
                             "shield" : 0,
-                            "money" : -5,
+                            "money" : 10,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1251,7 +1257,7 @@
                     {
                         "message": "boire une potion",
                         "transition": "bottom",
-                        "link": "/game/11",
+                        "link": "/lose",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
@@ -1268,17 +1274,17 @@
             },
             "Joséphine": {
                 "name": "Joséphine",
-                "message": "Super une bourse de 10 pièces, que voulez vous faire",
+                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
                 "answers": [
                     {
-                        "message": "aller voir un mendiant",
+                        "message": "ramasser une bourse",
                         "transition": "left",
                         "link": "/game/5",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
                             "shield" : 0,
-                            "money" : -5,
+                            "money" : 10,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1348,14 +1354,14 @@
                         }
                     },
                     {
-                        "message": "un marchand",
+                        "message": "aller voir un mendiant",
                         "transition": "right",
                         "link": "/game/16",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1364,14 +1370,14 @@
                         }
                     },
                     {
-                        "message": "une bourse de piece",
+                        "message": "aller voir un marchand",
                         "transition": "top",
-                        "link": "/game/13",
+                        "link": "/game/10",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 0,
-                            "money" : 10,
+                            "shield" : 1,
+                            "money" : -30,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1419,14 +1425,14 @@
                         }
                     },
                     {
-                        "message": "aller voir un marchand",
+                        "message": "aller voir un mendiant",
                         "transition": "right",
                         "link": "/game/16",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1435,14 +1441,14 @@
                         }
                     },
                     {
-                        "message": "ramasser une bourse",
+                        "message": "aller voir un marchand",
                         "transition": "top",
-                        "link": "/game/13",
+                        "link": "/game/10",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 0,
-                            "money" : 10,
+                            "shield" : 1,
+                            "money" : -30,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1498,7 +1504,7 @@
                     {
                         "message": "boire une potion",
                         "transition": "top",
-                        "link": "/game/11",
+                        "link": "/lose",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
@@ -1601,7 +1607,7 @@
                     {
                         "message": "caresser un petit chien",
                         "transition": "right",
-                        "link": "/game/17",
+                        "link": "/lose",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
@@ -1892,14 +1898,14 @@
                 "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
                 "answers": [
                     {
-                        "message": "ramasser une bourse",
+                        "message": "aller voir un marchand",
                         "transition": "left",
                         "link": "/game/10",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 0,
-                            "money" : 10,
+                            "shield" : 1,
+                            "money" : -30,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1908,14 +1914,14 @@
                         }
                     },
                     {
-                        "message": "aller voir un marchand",
+                        "message": "aller voir un mendiant",
                         "transition": "bottom",
                         "link": "/game/16",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1947,14 +1953,14 @@
                 "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
                 "answers": [
                     {
-                        "message": "ramasser une bourse",
+                        "message": "aller voir un marchand",
                         "transition": "left",
                         "link": "/game/10",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 0,
-                            "money" : 10,
+                            "shield" : 1,
+                            "money" : -30,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -1963,14 +1969,14 @@
                         }
                     },
                     {
-                        "message": "aller voir un marchand",
+                        "message": "aller voir un mendiant",
                         "transition": "bottom",
                         "link": "/game/16",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -2005,12 +2011,12 @@
             "image": "/images/maps/16.png",
             "José": {
                 "name": "José",
-                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
+                "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
                 "answers": [
                     {
                         "message": "boire une potion",
                         "transition": "left",
-                        "link": "/game/11",
+                        "link": "/lose",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
@@ -2076,7 +2082,7 @@
             "Joséphine": {
                 
                 "name": "Joséphine",
-                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
+                "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
                 "answers": [
                     {
                         "message": "boire une potion",
@@ -2162,8 +2168,8 @@
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -2190,7 +2196,7 @@
                     {
                         "message": "visiter une stèle étrange",
                         "transition": " left",
-                        "link": "/game/13",
+                        "link": "/game/12",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
@@ -2227,14 +2233,14 @@
                 "message": "Un petit chien, vous le caressez mais il vous mord , il avait la rage...",
                 "answers": [
                     {
-                        "message": "un marchand",
+                        "message": "aller voir un mendiant",
                         "transition": "top",
                         "link": "/game/16",
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -2690,8 +2696,8 @@
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,
@@ -2745,8 +2751,8 @@
                         "items": {
                             "sword": 0,
                             "sick" : 0,
-                            "shield" : 1,
-                            "money" : -20,
+                            "shield" : 0,
+                            "money" : -5,
                             "thief": 0,
                             "rune1": 0,
                             "rune2": 0,

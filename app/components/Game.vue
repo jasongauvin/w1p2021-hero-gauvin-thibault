@@ -1,5 +1,7 @@
 <template>
+  
   <div class="big-header" v-bind:style="{ backgroundImage: 'url(' + image + ')' }">
+    <audio src= "../assets/images/sound/cladun.mp3" autoplay></audio>
     <div class="text">
       <h1 v-if="character === 'José'"> {{ phase.José.message }}</h1>
       <h1 v-if="character === 'Joséphine'">{{ phase.Joséphine.message }}</h1>    
@@ -258,23 +260,27 @@ export default {
       deaths.noSword.map(x => {
         if (itemsSword == 0 && x == futureCase) {
           isDead = true;
+          alert("Et bah oui banane ! C'est pas très malin d'aller affronter des monstres sans épée !")
         }
       })
       deaths.noSwordNoShield.map(x => {
         if (itemsSword == 0 || 
             itemsShield == 0) {
-              if (x == futureCase) isDead = true;          
+              if (x == futureCase) isDeadx = true;
+              alert("Gros nul ! Pour l'épée on dit trop rien mais là, sans bouclier : C'est vraiment pas très malin !")          
         }
       })
       deaths.oneThief.map(x => {
         if (itemsThief > 1 &&
             x == futureCase) {
           isDead = true;
+          alert("Un copain c'est bien, mais tu connais le dicton : Trop bon, trop mort !")
         }
       })
       victory.runes.map(rune => {
         if (parsedItems[`${rune}`] === 1) {
           if (futureCase == victory.case) link = '/win';
+          alert("Et bah voilà ! C'était pas compliqué ! Maintenant, rejoins la case sortie !")
         }
       })
       this.$router.push(isDead ? '/lose' : link);

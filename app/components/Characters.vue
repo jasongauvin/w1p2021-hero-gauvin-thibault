@@ -6,7 +6,6 @@
       </div>
       <div class="text">
         <router-link class="button" to="/home">Retour</router-link>
-        <router-link class="button" to="/game/14">Play</router-link>
       </div>
     </div>
 <!--     <section class="homegif"></section>
@@ -60,14 +59,19 @@ font-size: 30px;
 }
 .characters {
   position: absolute;
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 740px;
-    height: 530px;
-    left: 940px;
-    top: 270px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 740px;
+  height: 530px;
+  left: 940px;
+  top: 270px;
+  text-align: center;
+  font-family: "Rubber Biscuit";
+  font-weight: bold;
+  color: gold;
+  font-size: 20px;
 }
 .text{
 background-color: black;

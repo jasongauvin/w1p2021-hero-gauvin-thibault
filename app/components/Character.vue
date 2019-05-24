@@ -36,6 +36,12 @@ article {
     font-size: 20px;
     line-height: 180%;
   }
+  img{
+    cursor: pointer;
+  }
+  div{
+    cursor: pointer;
+  }
 }
 </style>
 
