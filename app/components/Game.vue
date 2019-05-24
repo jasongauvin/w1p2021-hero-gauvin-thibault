@@ -1,15 +1,9 @@
 <template>
   <div class="big-header" v-bind:style="{ backgroundImage: 'url(' + image + ')' }">
     <div class="text">
-      <h1>{{ phase.garçon.message }}</h1>
-      <h1 v-if="character === 'fille'">{{ phase.fille.message }}</h1>    
+      <h1 v-if="character === 'José'"> {{ phase.José.message }}</h1>
+      <h1 v-if="character === 'Joséphine'">{{ phase.Joséphine.message }}</h1>    
       <!-- <h1>{{items.sword}}</h1> -->
-      <div class="item" data-content="3"></div>
-      <!-- <div class="item" v-for="answer in items"
-      v-bind:key="answer.message">
-      {{answer.message}}
-      </div> -->
-
 
           <p class="button" v-for="answer in answers"
             v-bind:key="answer.message"
@@ -28,19 +22,20 @@
     </div>
 
     <section class="charstat">
-      <img src="../assets/images/coco/Bitmap.png" alt="charcter">
+      <img src="../assets/images/coco/Bitmap.png" alt="character">
       <ul class="stat">
         <li>
           <img v-if="items.sword >= 1" src="../assets/images/coco/sword.png" alt="">
+          <img v-if="items.sword < 1" src="../assets/images/coco/sword_gris.png" alt="">
         </li>
         <li>
-          <img src="../assets/images/coco/shield.png" alt="">
+          <img v-if="items.shield >= 1" src="../assets/images/coco/shield.png" alt="">
+          <img v-if="items.shield < 1" src="../assets/images/coco/shield_gris.png" alt="">
         </li>
         <li>
-          <img src="../assets/images/coco/sick.png" alt="">
-        </li>
-        <li>
-          <img src="../assets/images/coco/thief.png" alt="">
+          <img v-if="items.thief >= 1" src="../assets/images/coco/thief.png" alt="">
+          <img v-if="items.thief < 1" src="../assets/images/coco/thief_gris.png" alt="">
+          
         </li>
       </ul>
     </section>
@@ -48,21 +43,25 @@
   <section class="runes">
     <ul class="rune">
       <li>
-        <img src="../assets/images/coco/rune1.png" alt="">
+          <img v-if="items.rune1 >= 1" src="../assets/images/coco/rune1.png" alt="">
+          <img v-if="items.rune1 < 1" src="../assets/images/coco/rune1_gris.png" alt="">
       </li>
       <li>
-        <img src="../assets/images/coco/rune2.png" alt="">
+          <img v-if="items.rune2 >= 1" src="../assets/images/coco/rune2.png" alt="">
+          <img v-if="items.rune2 < 1" src="../assets/images/coco/rune2_gris.png" alt="">
       </li>
       <li>
-        <img src="../assets/images/coco/rune3.png" alt="">
+        <img v-if="items.rune3 >= 1" src="../assets/images/coco/rune3.png" alt="">
+        <img v-if="items.rune3 < 1" src="../assets/images/coco/rune3_gris.png" alt="">
       </li>
       <li>
-        <img src="../assets/images/coco/rune4.png" alt="">
+        <img v-if="items.rune4 >= 1" src="../assets/images/coco/rune4.png" alt="">
+        <img v-if="items.rune4 < 1" src="../assets/images/coco/rune4_gris.png" alt="">
       </li>
     </ul>
   </section>
   <section class="money">
-    <img src="../assets/images/coco/coin.png" alt="charcter">
+    <img src="../assets/images/coco/coin.png" alt="character">
     <p>{{items.money}}</p>
   </section>
   </div>
@@ -98,16 +97,7 @@
     color: gold;
     font-size: 30px;
   }
-  .button{
-    text-align: center;
-    font-family: "Rubber Biscuit";
-    font-weight: bold;
-    color: gold;
-    font-size: 20px;
-    padding: 30px;
-    background-color: black;
-    border: 5px solid goldenrod;
-  }
+
 }
   .charstat{
   background-color: black;
@@ -175,8 +165,6 @@
 
 import data from "../../data.json";
 import itemsService from "../services/itemsService.js";
-
-// import Map from "../services/mappingGame.js";
 import character from '../services/characterService.js';
 import step from '../services/stepService.js';
 
@@ -190,9 +178,9 @@ export default {
       message: game.steps[this.$route.params.id].message,
       mage: data.game[this.$route.params.id].image,*/
       phase: data.steps[this.$route.params.id],
-      answers: this.characterChoice(),
+      answers: this.characterChoice(), //this.question.answers
       step: this.setStep(),
-      character: character.get(),
+      character: localStorage.getItem('character'), // character.get(),
       image: data.steps[this.$route.params.id].image,
       items: itemsService.getItems(),
 
@@ -200,23 +188,30 @@ export default {
   },
   methods: {
     
-    createMap() {
+/*     createMap() {
       setTimeout(() => {
         const map = new Map(document.querySelector('.big-header'), 5, game);
         this.images = map.create(this.$route.params.id).map(image => require(image));
       }, 200);
-    },
+    }, */
     characterChoice() {
-      let answers = data.steps[this.$route.params.id].garçon.answers //attention à GARçON
-      let result = []
-      let characterName = answers.name // character.get()
-      answers.forEach(answer => {
-      answer.perso === characterName || answer.perso === 'Tous' ? result.push(answer) : ''
-      });
-      console.log("answersTab",answers)
 
-      return result
+      let questions = data.steps[this.$route.params.id]
+      let result = []
+      let characterName = localStorage.getItem('character')
+      if(characterName === "José"){
+        questions = data.steps[this.$route.params.id].José.answers
+      } else {
+        questions = data.steps[this.$route.params.id].Joséphine.answers
+      }
+      questions.forEach(question => {
+        result.push(question)
+
+      });
+
+      return result 
     },
+
     setStep() {
       step.set(this.$route.params.id)
       this.phase = this.$route.params.id

@@ -1,7 +1,7 @@
 <template>
-  <article>
+  <article @click="characterChoice(character.name)">
     <h2>{{ character.name }} </h2>
-    <h3> {{ character.speciality }} </h3>
+    <p >{{ character.description }}</p>
     <img :src="character.image" alt="">
     <div class="test">Je choisis celui-ci</div>
 
@@ -41,9 +41,18 @@ article {
 
 
 <script>
+import router from '../router.js';
+import character from '../services/characterService.js';
+
 
 
 export default {
-  props: ['character']
-};
+    props: ['character'],
+    methods: {
+        characterChoice(name) {
+            character.choose(name)
+            router.push('/game/14')
+        }
+    }
+}
 </script>

@@ -1,6 +1,54 @@
 @import 'reset';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+
+.slide-leave-active,
+.slide-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: black;
+    z-index: 3;
+  }
+}
+
+.slide-leave-active {
+  animation: fake 1s;
+
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.slide-enter-active {
+  animation: fake 2s;
+
+  &::after {
+    animation: slideEnter 1s ease 1s;
+  }
+}
+
 $hetic-green: #0de595;
 
 body,
@@ -37,6 +85,10 @@ textarea {
     background-color: black;
     border: 5px solid goldenrod;
     border-radius: 5px;
+    &:hover{
+      background-color: goldenrod;
+      color:black
+    }
 }
 
 /* *{

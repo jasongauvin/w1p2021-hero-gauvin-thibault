@@ -1,4 +1,5 @@
 import './assets/scss/styles.scss';
+import './assets/scss/import.scss';
 import Vue from 'vue';
 import router from './router';
 

@@ -94,7 +94,10 @@ import data from "../../data.json";
 export default {
   data: function() {
     return {
-      characters: [
+      message: 'Choisissez votre personnage',
+      characters: data.characters,
+      image: data.character.image,
+/*       characters: [
         {
         name : "Peter",
         speciality : "resiste aux morsures",
@@ -105,9 +108,17 @@ export default {
         speciality : "resiste au poison",
         image : require('/assets/images/coco/Bitmap2.png')
       }
-      ]
+      ] */
     }
-  },
+  },methods: {
+        setBackground() {
+          document.addEventListener('DOMContentLoaded', () => {
+          let bigHeader = document.querySelector('.big-header')
+          bigHeader.style.backgroundImage = 'url(' + data.home.image + ')'
+          return data.home.image
+      })
+    }
+    },
   components: {
     Character
   }

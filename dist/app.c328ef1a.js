@@ -189,7 +189,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/vue/dist/vue.common.dev.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/scss/import.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"/Users/jasongauvin/Documents/Documents - MacBook Pro de jason/projets/github/dungeon-rush/app/fonts/Rubber Biscuit.eot":[["Rubber Biscuit.6d276450.eot","fonts/Rubber Biscuit.eot"],"fonts/Rubber Biscuit.eot"],"/Users/jasongauvin/Documents/Documents - MacBook Pro de jason/projets/github/dungeon-rush/app/fonts/Rubber Biscuit.woff":[["Rubber Biscuit.64afe496.woff","fonts/Rubber Biscuit.woff"],"fonts/Rubber Biscuit.woff"],"/Users/jasongauvin/Documents/Documents - MacBook Pro de jason/projets/github/dungeon-rush/app/fonts/Rubber Biscuit.ttf":[["Rubber Biscuit.7109d831.ttf","fonts/Rubber Biscuit.ttf"],"fonts/Rubber Biscuit.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/vue/dist/vue.common.dev.js":[function(require,module,exports) {
 var global = arguments[3];
 /*!
  * Vue.js v2.6.10
@@ -14840,18 +14845,19 @@ module.exports = new Step();
 },{}],"../data.json":[function(require,module,exports) {
 module.exports = {
   "characters": [{
-    "name": "Garçon",
-    "description": "J'aime le sport",
-    "image": ""
+    "name": "José",
+    "description": "Je resiste aux morçures",
+    "image": "/images/coco/Bitmap.png"
   }, {
-    "name": "Fille",
-    "description": "J'aime les garçons"
+    "name": "Joséphine",
+    "description": "Je ne crains pas le poison",
+    "image": "/images/coco/Bitmap2.png"
   }],
   "character": {
-    "image": "dist/characters/perso1/greenbottom.gif"
+    "image": "/images/coco/character.gif"
   },
   "home": {
-    "image": "/images/castle.png"
+    "image": "/images/coco/home.gif"
   },
   "steps": {
     "0": {
@@ -14860,11 +14866,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/0.png",
-      "garçon": {
+      "José": {
         "name": "José",
         "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "vers une bourse",
           "transition": "right",
           "link": "/game/1",
           "items": {
@@ -14873,10 +14879,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "bottom",
           "link": "/game/5",
           "items": {
@@ -14885,15 +14894,18 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
         "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "vers une bourse",
           "transition": "right",
           "link": "/game/1",
           "items": {
@@ -14902,10 +14914,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "bottom",
           "link": "/game/5",
           "items": {
@@ -14914,7 +14929,10 @@ module.exports = {
             "shield": 0,
             "money": -50,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -14925,11 +14943,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/1.png",
-      "garçon": {
+      "José": {
         "name": "José",
         "message": "super, une bourse de 10 pièces! Vers ou allez ?",
         "answers": [{
-          "message": "une rune",
+          "message": "vers une rune",
           "transition": "top",
           "link": "/game/0",
           "items": {
@@ -14938,10 +14956,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 1,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un lit",
+          "message": "allez se reposer",
           "transition": "bottom",
           "link": "/game/2",
           "items": {
@@ -14950,10 +14971,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "right",
           "link": "/game/6",
           "items": {
@@ -14962,15 +14986,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
         "message": "super, une bourse de 10 pièces! Vers ou allez ?",
         "answers": [{
-          "message": "une rune",
+          "message": "vers une rune",
           "transition": "top",
           "link": "/game/0",
           "items": {
@@ -14979,10 +15006,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 1,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un lit",
+          "message": "allez se reposer",
           "transition": "bottom",
           "link": "/game/2",
           "items": {
@@ -14991,10 +15021,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "right",
           "link": "/game/6",
           "items": {
@@ -15003,7 +15036,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15014,11 +15050,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/2.png",
-      "garçon": {
+      "José": {
         "name": "José",
         "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "vers une bourse",
           "transition": "top",
           "link": "/game/1",
           "items": {
@@ -15027,48 +15063,10 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "affrtoner un mechant",
-          "transition": "bottom",
-          "link": "/game/3",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 0,
-            "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "voir un ancien brigand",
-          "transition": "right",
-          "link": "/game/7",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 0,
-            "thief": 1,
-            "rune": 0
-          }
-        }]
-      },
-      "fille": {
-        "name": "Joséphine",
-        "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
-        "answers": [{
-          "message": "une bourse de piece",
-          "transition": "top",
-          "link": "/game/1",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 10,
-            "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "affronter un mechant",
@@ -15080,10 +15078,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "voir un ancien brigand",
+          "message": "voir un brigand",
           "transition": "right",
           "link": "/game/7",
           "items": {
@@ -15092,7 +15093,60 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }]
+      },
+      "Joséphine": {
+        "name": "Joséphine",
+        "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
+        "answers": [{
+          "message": "vers une bourse",
+          "transition": "top",
+          "link": "/game/1",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 10,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "affronter un mechant",
+          "transition": "bottom",
+          "link": "/game/3",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 0,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "voir un brigand",
+          "transition": "right",
+          "link": "/game/7",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 0,
+            "thief": 1,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15103,11 +15157,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/3.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "oh non un méchant heuresement que vous aviez votre épée !",
+        "message": "oh non un méchant heuresement que vous aviez votre épée, ou aller maintenant",
         "answers": [{
-          "message": "un lit",
+          "message": "aller se reposer",
           "transition": "top",
           "link": "/game/2",
           "items": {
@@ -15116,10 +15170,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une rune",
+          "message": "vers une rune",
           "transition": "bottom",
           "link": "/game/4",
           "items": {
@@ -15128,10 +15185,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 1,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "right",
           "link": "/game/8",
           "items": {
@@ -15140,15 +15200,18 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "oh non un méchant heuresement que vous aviez votre épée !",
+        "message": "oh non un méchant heuresement que vous aviez votre épée, ou aller maintenant",
         "answers": [{
-          "message": "un lit",
+          "message": "aller se reposer",
           "transition": "top",
           "link": "/game/2",
           "items": {
@@ -15157,10 +15220,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une rune",
+          "message": "vers une rune",
           "transition": "bottom",
           "link": "/game/4",
           "items": {
@@ -15169,10 +15235,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 1,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "right",
           "link": "/game/8",
           "items": {
@@ -15181,7 +15250,10 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15192,7 +15264,7 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/4.png",
-      "garçon": {
+      "José": {
         "name": "José",
         "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
         "answers": [{
@@ -15205,7 +15277,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "affronter un autre mechant",
@@ -15217,11 +15292,14 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
         "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
         "answers": [{
@@ -15234,7 +15312,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "affronter un autre mechant",
@@ -15246,7 +15327,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15257,11 +15341,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/5.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "oh non encore un mandiant , vous lui donnez 10 piece",
+        "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
         "answers": [{
-          "message": "une rune",
+          "message": "vers une rune",
           "transition": "left",
           "link": "/game/0",
           "items": {
@@ -15270,10 +15354,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 1,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "right",
           "link": "/game/10",
           "items": {
@@ -15282,10 +15369,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "bottom",
           "link": "/game/6",
           "items": {
@@ -15294,15 +15384,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "oh non encore un mandiant , vous lui donnez une piece",
+        "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
         "answers": [{
-          "message": "une rune",
+          "message": "vers une rune",
           "transition": "left",
           "link": "/game/0",
           "items": {
@@ -15311,10 +15404,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 1,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "right",
           "link": "/game/10",
           "items": {
@@ -15323,10 +15419,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "bottom",
           "link": "/game/6",
           "items": {
@@ -15335,7 +15434,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15346,11 +15448,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/6.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "vous ouvrez le coffre et vous y trouvez une épée",
+        "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
         "answers": [{
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "top",
           "link": "/game/5",
           "items": {
@@ -15359,10 +15461,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un ancien brigand",
+          "message": "aller voir un brigand",
           "transition": "bottom",
           "link": "/game/7",
           "items": {
@@ -15371,10 +15476,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un antidote",
+          "message": "aller boire une potion",
           "transition": "right",
           "link": "/game/11",
           "items": {
@@ -15383,10 +15491,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/1",
           "items": {
@@ -15395,15 +15506,18 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "vous ouvrez le coffre et vous y trouvez une épée",
+        "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
         "answers": [{
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "top",
           "link": "/game/5",
           "items": {
@@ -15412,10 +15526,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un ancien brigand",
+          "message": "aller voir un brigand",
           "transition": "bottom",
           "link": "/game/7",
           "items": {
@@ -15424,10 +15541,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un antidote",
+          "message": "aller boire une potion",
           "transition": "right",
           "link": "/game/11",
           "items": {
@@ -15436,10 +15556,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/1",
           "items": {
@@ -15448,7 +15571,10 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15459,11 +15585,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/7.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "un acien bigand s'est joint à vous !",
+        "message": "un acien bigand s'est joint à vous, ou voulez vous aller ?",
         "answers": [{
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "bottom",
           "link": "/game/8",
           "items": {
@@ -15472,10 +15598,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une stele etrange",
+          "message": "visiter une stele etrange",
           "transition": "right",
           "link": "/game/12",
           "items": {
@@ -15484,10 +15613,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un lit",
+          "message": "se reposer",
           "transition": "left",
           "link": "/game/2",
           "items": {
@@ -15496,10 +15628,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "top",
           "link": "/game/6",
           "items": {
@@ -15508,15 +15643,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "un acien bigand s'est joint à vous !",
+        "message": "un acien bigand s'est joint à vous, ou voulez vous aller ?",
         "answers": [{
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "bottom",
           "link": "/game/8",
           "items": {
@@ -15525,10 +15663,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une stele etrange",
+          "message": "visiter une stele etrange",
           "transition": "right",
           "link": "/game/12",
           "items": {
@@ -15537,10 +15678,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un lit",
+          "message": "se reposer",
           "transition": "left",
           "link": "/game/2",
           "items": {
@@ -15549,10 +15693,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "top",
           "link": "/game/6",
           "items": {
@@ -15561,7 +15708,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15572,11 +15722,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/8.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "oh non encore un mandiant , vous lui donnez une piece",
+        "message": "oh non encore un mandiant , vous lui donnez 5 pieces. Que faire maintenant ?",
         "answers": [{
-          "message": "un ancien brigand",
+          "message": "aller voir brigand",
           "transition": "top",
           "link": "/game/7",
           "items": {
@@ -15585,10 +15735,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un méchant",
+          "message": "affronter un méchant",
           "transition": "bottom",
           "link": "/game/9",
           "items": {
@@ -15597,10 +15750,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "right",
           "link": "/game/13",
           "items": {
@@ -15609,10 +15765,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mechant",
+          "message": "affronter un autre méchant",
           "transition": "left",
           "link": "/game/3",
           "items": {
@@ -15621,15 +15780,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "oh non encore un mandiant , vous lui donnez une piece",
+        "message": "oh non encore un mandiant , vous lui donnez 5 pieces. Que faire maintenant ?",
         "answers": [{
-          "message": "un ancien brigand",
+          "message": "aller voir brigand",
           "transition": "top",
           "link": "/game/7",
           "items": {
@@ -15638,10 +15800,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un méchant",
+          "message": "affronter un méchant",
           "transition": "bottom",
           "link": "/game/9",
           "items": {
@@ -15650,10 +15815,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "right",
           "link": "/game/13",
           "items": {
@@ -15662,10 +15830,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mechant",
+          "message": "affronter un autre méchant",
           "transition": "left",
           "link": "/game/3",
           "items": {
@@ -15674,7 +15845,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15685,11 +15859,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/9.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "oh un méchant heuresement que vous aviez votre épée",
+        "message": "oh un méchant heuresement que vous aviez votre épée, quelle direction voulez vous prendre ?",
         "answers": [{
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "left",
           "link": "/game/4",
           "items": {
@@ -15698,10 +15872,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 1,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "top",
           "link": "/game/8",
           "items": {
@@ -15710,10 +15887,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "l'entrée du donjon",
+          "message": "retourner a l'entree du donjon",
           "transition": "right",
           "link": "/game/14",
           "items": {
@@ -15722,15 +15902,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "oh un méchant heuresement que vous aviez votre épée",
+        "message": "oh un méchant heuresement que vous aviez votre épée, quelle direction voulez vous prendre ?",
         "answers": [{
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "left",
           "link": "/game/4",
           "items": {
@@ -15739,10 +15922,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 1,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "top",
           "link": "/game/8",
           "items": {
@@ -15751,10 +15937,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "l'entrée du donjon",
+          "message": "retourner a l'entree du donjon",
           "transition": "right",
           "link": "/game/14",
           "items": {
@@ -15763,7 +15952,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15774,11 +15966,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/10.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Super une bourse de 10 pièces",
+        "message": "Super une bourse de 10 pièces, que voulez vous faire",
         "answers": [{
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "left",
           "link": "/game/5",
           "items": {
@@ -15787,10 +15979,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un super méchant",
+          "message": "combattre un super méchant",
           "transition": "right",
           "link": "/game/15",
           "items": {
@@ -15799,10 +15994,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une potion",
+          "message": "boire une potion",
           "transition": "bottom",
           "link": "/game/11",
           "items": {
@@ -15811,15 +16009,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Super une bourse de 10 pièces",
+        "message": "Super une bourse de 10 pièces, que voulez vous faire",
         "answers": [{
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "left",
           "link": "/game/5",
           "items": {
@@ -15828,10 +16029,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un super méchant",
+          "message": "combattre un super méchant",
           "transition": "right",
           "link": "/game/15",
           "items": {
@@ -15840,10 +16044,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une potion",
+          "message": "boire une potion",
           "transition": "bottom",
           "link": "/game/11",
           "items": {
@@ -15852,7 +16059,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15863,61 +16073,8 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/11.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Vous trouvez une potion et vous la buvez, heuresement que vous etes imunisé !",
-        "answers": [{
-          "message": "un stèle étrange",
-          "transition": "bottom",
-          "link": "/game/12",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 0,
-            "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "un marchand",
-          "transition": "right",
-          "link": "/game/16",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 1,
-            "money": -30,
-            "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "une bourse de piece",
-          "transition": "top",
-          "link": "/game/13",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 10,
-            "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "un coffre",
-          "transition": "left",
-          "link": "/game/6",
-          "items": {
-            "sword": 1,
-            "sick": 0,
-            "shield": 0,
-            "money": 0,
-            "thief": 0,
-            "rune": 0
-          }
-        }]
-      },
-      "fille": {
-        "name": "Joséphine",
         "message": "Vous trouvez une potion et vous la buvez, on vous a jamais dit de pas boire n'importe quoi ?!",
         "answers": [{
           "message": "un stèle étrange",
@@ -15929,7 +16086,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "un marchand",
@@ -15938,10 +16098,13 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
+            "shield": 0,
             "money": -30,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "une bourse de piece",
@@ -15953,7 +16116,10 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "un coffre",
@@ -15965,7 +16131,75 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }]
+      },
+      "Joséphine": {
+        "name": "Joséphine",
+        "message": "Vous trouvez une potion et vous la buvez, heuresement que vous etes imunisé !, que faire ?",
+        "answers": [{
+          "message": "visiter une stele etrange",
+          "transition": "bottom",
+          "link": "/game/12",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 0,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "aller voir un marchand",
+          "transition": "right",
+          "link": "/game/16",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": -30,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "ramasser une bourse",
+          "transition": "top",
+          "link": "/game/13",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 10,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "ouvrir un coffre",
+          "transition": "left",
+          "link": "/game/6",
+          "items": {
+            "sword": 1,
+            "sick": 0,
+            "shield": 0,
+            "money": 0,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -15976,11 +16210,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/12.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Une bien etrange stèle, a quoi peut elle bien servir ?",
+        "message": "Une bien etrange stèle, a quoi peut elle bien servir ? intrigué vous ne savez plus ou allez",
         "answers": [{
-          "message": "un ancien brigand",
+          "message": "aller voir un brigand",
           "transition": "left",
           "link": "/game/7",
           "items": {
@@ -15989,10 +16223,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un antidote",
+          "message": "boire une potion",
           "transition": "top",
           "link": "/game/11",
           "items": {
@@ -16001,10 +16238,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "bottom",
           "link": "/game/13",
           "items": {
@@ -16013,10 +16253,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "right",
           "link": "/game/17",
           "items": {
@@ -16025,15 +16268,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Une bien etrange stèle, a quoi peut elle bien servir ?",
+        "message": "Une bien etrange stèle, a quoi peut elle bien servir ? intrigué vous ne savez plus ou allez",
         "answers": [{
-          "message": "un ancien brigand",
+          "message": "aller voir un brigand",
           "transition": "left",
           "link": "/game/7",
           "items": {
@@ -16042,10 +16288,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un antidote",
+          "message": "boire une potion",
           "transition": "top",
           "link": "/game/11",
           "items": {
@@ -16054,10 +16303,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "bottom",
           "link": "/game/13",
           "items": {
@@ -16066,10 +16318,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "right",
           "link": "/game/17",
           "items": {
@@ -16078,7 +16333,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16089,11 +16347,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/13.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "super 10 pièces en plus dans votre bourse !",
+        "message": "super 10 pièces en plus dans votre bourse ! quelle direction voulez vous prendre ?",
         "answers": [{
-          "message": "un stèle étrange",
+          "message": "visiter un stèle étrange",
           "transition": "top",
           "link": "/game/12",
           "items": {
@@ -16102,10 +16360,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "l'entrée du donjon",
+          "message": "retourner a l'entrée du donjon",
           "transition": "bottom",
           "link": "/game/14",
           "items": {
@@ -16114,10 +16375,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "left",
           "link": "/game/8",
           "items": {
@@ -16126,10 +16390,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un ancien brigand",
+          "message": "voir un brigand",
           "transition": "right",
           "link": "/game/18",
           "items": {
@@ -16138,15 +16405,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "super 10 pièces en plus dans votre bourse !",
+        "message": "super 10 pièces en plus dans votre bourse ! quelle direction voulez vous prendre ?",
         "answers": [{
-          "message": "un stèle étrange",
+          "message": "visiter un stèle étrange",
           "transition": "top",
           "link": "/game/12",
           "items": {
@@ -16155,10 +16425,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "l'entrée du donjon",
+          "message": "retourner a l'entrée du donjon",
           "transition": "bottom",
           "link": "/game/14",
           "items": {
@@ -16167,10 +16440,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "aller voir un mendiant",
           "transition": "left",
           "link": "/game/8",
           "items": {
@@ -16179,10 +16455,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un ancien brigand",
+          "message": "voir un brigand",
           "transition": "right",
           "link": "/game/18",
           "items": {
@@ -16191,7 +16470,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16202,11 +16484,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/14.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Vous voila au début du donjon , ou Voulze vous allez",
+        "message": "Vous voila au début du donjon , ou Voulez vous allez",
         "answers": [{
-          "message": "un mechant",
+          "message": "affronter un mechant",
           "transition": "left",
           "link": "/game/9",
           "items": {
@@ -16215,10 +16497,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "right",
           "link": "/game/19",
           "items": {
@@ -16227,10 +16512,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "top",
           "link": "/game/13",
           "items": {
@@ -16239,15 +16527,18 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Vous voila au début du donjon , ou Voulze vous allez",
+        "message": "Vous voila au début du donjon , ou Voulez vous allez",
         "answers": [{
-          "message": "un mechant",
+          "message": "affronter un mechant",
           "transition": "left",
           "link": "/game/9",
           "items": {
@@ -16256,10 +16547,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "right",
           "link": "/game/19",
           "items": {
@@ -16268,10 +16562,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "top",
           "link": "/game/13",
           "items": {
@@ -16280,7 +16577,10 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16291,11 +16591,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/15.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier",
+        "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/10",
           "items": {
@@ -16304,22 +16604,28 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un marchand",
+          "message": "aller voir un marchand",
           "transition": "bottom",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
+            "shield": 0,
             "money": -30,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "right",
           "link": "/game/20",
           "items": {
@@ -16328,15 +16634,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 1,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier",
+        "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/10",
           "items": {
@@ -16345,22 +16654,28 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un marchand",
+          "message": "aller voir un marchand",
           "transition": "bottom",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
+            "shield": 0,
             "money": -30,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "right",
           "link": "/game/20",
           "items": {
@@ -16369,7 +16684,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 1,
+            "rune4": 0
           }
         }]
       }
@@ -16380,11 +16698,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/16.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance !",
+        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
         "answers": [{
-          "message": "un antidote",
+          "message": "boire une potion",
           "transition": "left",
           "link": "/game/11",
           "items": {
@@ -16393,10 +16711,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un super méchant",
+          "message": "affronter un super méchant",
           "transition": "right",
           "link": "/game/21",
           "items": {
@@ -16405,10 +16726,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "bottom",
           "link": "/game/17",
           "items": {
@@ -16417,10 +16741,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un autre super méchant",
+          "message": "affronter un autre super méchant",
           "transition": "top",
           "link": "/game/15",
           "items": {
@@ -16429,15 +16756,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance !",
+        "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
         "answers": [{
-          "message": "un antidote",
+          "message": "boire une potion",
           "transition": "left",
           "link": "/game/11",
           "items": {
@@ -16446,10 +16776,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un super méchant",
+          "message": "affronter un super méchant",
           "transition": "right",
           "link": "/game/21",
           "items": {
@@ -16458,10 +16791,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "bottom",
           "link": "/game/17",
           "items": {
@@ -16470,10 +16806,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un autre super méchant",
+          "message": "affronter un autre super méchant",
           "transition": "top",
           "link": "/game/15",
           "items": {
@@ -16482,7 +16821,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16493,8 +16835,73 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/17.png",
-      "garçon": {
+      "José": {
         "name": "José",
+        "message": "Un petit chien, vous le caressez mais il vous mord , heureusement que vous etes imunisé. que faire maintenant",
+        "answers": [{
+          "message": "voir un marchand",
+          "transition": "top",
+          "link": "/game/16",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": -30,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "aller voir un brigand",
+          "transition": "bottom",
+          "link": "/game/18",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 0,
+            "thief": 1,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "visiter une stèle étrange",
+          "transition": " left",
+          "link": "/game/13",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": 0,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }, {
+          "message": "voir un mendiant",
+          "transition": "right",
+          "link": "/game/22",
+          "items": {
+            "sword": 0,
+            "sick": 0,
+            "shield": 0,
+            "money": -5,
+            "thief": 0,
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
+          }
+        }]
+      },
+      "Joséphine": {
+        "name": "Joséphine",
         "message": "Un petit chien, vous le caressez mais il vous mord , il avait la rage...",
         "answers": [{
           "message": "un marchand",
@@ -16503,10 +16910,13 @@ module.exports = {
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
+            "shield": 0,
             "money": -30,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "un ancien brigand",
@@ -16518,7 +16928,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "une stèle étrange",
@@ -16530,7 +16943,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "un mendiant",
@@ -16542,60 +16958,10 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
-          }
-        }]
-      },
-      "fille": {
-        "name": "Joséphine",
-        "message": "Un petit chien, vous le caressez mais il vous mord , heureusement que vous etes imunisé",
-        "answers": [{
-          "message": "un marchand",
-          "transition": "top",
-          "link": "/game/16",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 1,
-            "money": -30,
-            "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "un ancien brigand",
-          "transition": "bottom",
-          "link": "/game/18",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 0,
-            "thief": 1,
-            "rune": 0
-          }
-        }, {
-          "message": "une stèle étrange",
-          "transition": " left",
-          "link": "/game/13",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": 0,
-            "thief": 0,
-            "rune": 0
-          }
-        }, {
-          "message": "un mendiant",
-          "transition": "right",
-          "link": "/game/22",
-          "items": {
-            "sword": 0,
-            "sick": 0,
-            "shield": 0,
-            "money": -5,
-            "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16606,11 +16972,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/18.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "un ancien brigand veut se joindre à vous , vous acceptez.",
+        "message": "un ancien brigand veut se joindre à vous , vous acceptez. Quelle direction prendre",
         "answers": [{
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "top",
           "link": "/game/17",
           "items": {
@@ -16619,10 +16985,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un autre bourse",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/13",
           "items": {
@@ -16631,10 +17000,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une autre bourse",
           "transition": "right",
           "link": "/game/23",
           "items": {
@@ -16643,10 +17015,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "bottom",
           "link": "/game/19",
           "items": {
@@ -16655,15 +17030,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "un ancien brigand veut se joindre à vous , vous acceptez.",
+        "message": "un ancien brigand veut se joindre à vous , vous acceptez. Quelle direction prendre",
         "answers": [{
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "top",
           "link": "/game/17",
           "items": {
@@ -16672,10 +17050,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un autre bourse",
+          "message": "ramasser une bourse",
           "transition": "left",
           "link": "/game/13",
           "items": {
@@ -16684,10 +17065,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une bourse de piece",
+          "message": "ramasser une autre bourse",
           "transition": "right",
           "link": "/game/23",
           "items": {
@@ -16696,10 +17080,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "bottom",
           "link": "/game/19",
           "items": {
@@ -16708,7 +17095,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16719,11 +17109,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/19.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Super un coffre , vous l'ouvrez et y trouvez une épée",
+        "message": "Super un coffre , vous l'ouvrez et y trouvez une épée. ou voulez vous aller",
         "answers": [{
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "right",
           "link": "/game/24",
           "items": {
@@ -16732,10 +17122,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 1
           }
         }, {
-          "message": "un ancien brigand",
+          "message": "aller voir un brigand",
           "transition": "top",
           "link": "/game/18",
           "items": {
@@ -16744,7 +17137,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "l'entrée du donjon",
@@ -16756,15 +17152,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Super un coffre , vous l'ouvrez et y trouvez une épée",
+        "message": "Super un coffre , vous l'ouvrez et y trouvez une épée. ou voulez vous aller",
         "answers": [{
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "right",
           "link": "/game/24",
           "items": {
@@ -16773,10 +17172,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 1
           }
         }, {
-          "message": "un ancien brigand",
+          "message": "aller voir un brigand",
           "transition": "top",
           "link": "/game/18",
           "items": {
@@ -16785,7 +17187,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 1,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
           "message": "l'entrée du donjon",
@@ -16797,7 +17202,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16808,11 +17216,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/20.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "Vous venez d'activer une rune !",
+        "message": "Vous venez d'activer une rune ! Que faire maintenant ?",
         "answers": [{
-          "message": "un super mechant",
+          "message": "affronter un super mechant",
           "transition": "left",
           "link": "/game/15",
           "items": {
@@ -16821,10 +17229,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un autre super mechant",
+          "message": "affronter un autre super mechant",
           "transition": "bottom",
           "link": "/game/21",
           "items": {
@@ -16833,15 +17244,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "Vous venez d'activer une rune !",
+        "message": "Vous venez d'activer une rune ! Que faire maintenant ?",
         "answers": [{
-          "message": "un super mechant",
+          "message": "affronter un super mechant",
           "transition": "left",
           "link": "/game/15",
           "items": {
@@ -16850,10 +17264,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un autre super mechant",
+          "message": "affronter un autre super mechant",
           "transition": "bottom",
           "link": "/game/21",
           "items": {
@@ -16862,7 +17279,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16873,11 +17293,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/21.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier",
+        "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier, quelle option choisissez vous ?",
         "answers": [{
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "top",
           "link": "/game/20",
           "items": {
@@ -16886,10 +17306,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 1,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "bottom",
           "link": "/game/22",
           "items": {
@@ -16898,27 +17321,33 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un marchand",
+          "message": "voir un marchand",
           "transition": "left",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
+            "shield": 0,
             "money": -30,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier",
+        "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier, quelle option choisissez vous ?",
         "answers": [{
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "top",
           "link": "/game/20",
           "items": {
@@ -16927,10 +17356,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 1,
+            "rune4": 0
           }
         }, {
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "bottom",
           "link": "/game/22",
           "items": {
@@ -16939,19 +17371,25 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un marchand",
+          "message": "voir un marchand",
           "transition": "left",
           "link": "/game/16",
           "items": {
             "sword": 0,
             "sick": 0,
-            "shield": 1,
+            "shield": 0,
             "money": -30,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -16962,11 +17400,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/22.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "oh nan pas un mandiant , vous lui donez 10 pièces",
+        "message": "oh nan pas un mandiant , vous lui donez 5 pièces. Ou allez ?",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "bottom",
           "link": "/game/23",
           "items": {
@@ -16975,10 +17413,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "left",
           "link": "/game/17",
           "items": {
@@ -16987,10 +17428,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un super méchant",
+          "message": "affronter un super méchant",
           "transition": "top",
           "link": "/game/21",
           "items": {
@@ -16999,15 +17443,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "oh nan pas un mandiant , vous lui donez 10 pièces",
+        "message": "oh nan pas un mandiant , vous lui donez 5 pièces. ou allez ?",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "bottom",
           "link": "/game/23",
           "items": {
@@ -17016,10 +17463,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un petit chien",
+          "message": "caresser un petit chien",
           "transition": "left",
           "link": "/game/17",
           "items": {
@@ -17028,10 +17478,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un super méchant",
+          "message": "affronter un super méchant",
           "transition": "top",
           "link": "/game/21",
           "items": {
@@ -17040,7 +17493,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -17051,11 +17507,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/23.png",
-      "garçon": {
+      "José": {
         "name": "José",
         "message": "TADAAA encore 10 pièces pour vous , ou voules vous allez maintenant ?",
         "answers": [{
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "top",
           "link": "/game/22",
           "items": {
@@ -17064,10 +17520,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "bottom",
           "link": "/game/24",
           "items": {
@@ -17076,10 +17535,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 1
           }
         }, {
-          "message": "un brigand",
+          "message": "aller voir un brigand",
           "transition": "left",
           "link": "/game/18",
           "items": {
@@ -17088,15 +17550,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
         "message": "TADAAA encore 10 pièces pour vous , ou voules vous allez maintenant ?",
         "answers": [{
-          "message": "un mendiant",
+          "message": "voir un mendiant",
           "transition": "top",
           "link": "/game/22",
           "items": {
@@ -17105,10 +17570,13 @@ module.exports = {
             "shield": 0,
             "money": -5,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "une rune",
+          "message": "activer une rune",
           "transition": "bottom",
           "link": "/game/24",
           "items": {
@@ -17117,10 +17585,13 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 1
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 1
           }
         }, {
-          "message": "un brigand",
+          "message": "aller voir un brigand",
           "transition": "left",
           "link": "/game/18",
           "items": {
@@ -17129,7 +17600,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -17140,11 +17614,11 @@ module.exports = {
         "volume": 0
       },
       "image": "/images/maps/24.png",
-      "garçon": {
+      "José": {
         "name": "José",
-        "message": "vous venez de trouver une rune !",
+        "message": "vous venez de trouver une rune ! quelle direction voulez vous prendre",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "top",
           "link": "/game/23",
           "items": {
@@ -17153,10 +17627,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "left",
           "link": "/game/19",
           "items": {
@@ -17165,15 +17642,18 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       },
-      "fille": {
+      "Joséphine": {
         "name": "Joséphine",
-        "message": "vous venez de trouver une rune !",
+        "message": "vous venez de trouver une rune ! quelle direction voulez vous prendre",
         "answers": [{
-          "message": "une bourse de piece",
+          "message": "ramasser une bourse",
           "transition": "top",
           "link": "/game/23",
           "items": {
@@ -17182,10 +17662,13 @@ module.exports = {
             "shield": 0,
             "money": 10,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }, {
-          "message": "un coffre",
+          "message": "ouvrir un coffre",
           "transition": "left",
           "link": "/game/19",
           "items": {
@@ -17194,7 +17677,10 @@ module.exports = {
             "shield": 0,
             "money": 0,
             "thief": 0,
-            "rune": 0
+            "rune1": 0,
+            "rune2": 0,
+            "rune3": 0,
+            "rune4": 0
           }
         }]
       }
@@ -17655,13 +18141,68 @@ render._withStripped = true
       
       }
     })();
-},{"../services/stepService.js":"services/stepService.js","../../data.json":"../data.json","./../assets/images/coco/home.gif":[["home.f5544c19.gif","assets/images/coco/home.gif"],"assets/images/coco/home.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Character.vue":[function(require,module,exports) {
+},{"../services/stepService.js":"services/stepService.js","../../data.json":"../data.json","./../assets/images/coco/home.gif":[["home.f5544c19.gif","assets/images/coco/home.gif"],"assets/images/coco/home.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"services/characterService.js":[function(require,module,exports) {
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/**
+ * Class to set and get player's character
+ * @class character
+ */
+var Character =
+/*#__PURE__*/
+function () {
+  function Character() {
+    _classCallCheck(this, Character);
+
+    this.character = 'Default';
+  }
+  /**
+   * Set the character's name in `localStorage`
+   * @param {String} character character's name
+   * @memberof character
+   */
+
+
+  _createClass(Character, [{
+    key: "choose",
+    value: function choose(character) {
+      this.character = character;
+      localStorage.setItem('character', this.character);
+    }
+    /**
+     * @returns current character
+     * @memberof character
+     */
+
+  }, {
+    key: "get",
+    value: function get() {
+      return localStorage.getItem('character');
+    }
+  }]);
+
+  return Character;
+}();
+
+module.exports = new Character();
+},{}],"components/Character.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+
+var _router = _interopRequireDefault(require("../router.js"));
+
+var _characterService = _interopRequireDefault(require("../services/characterService.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //
 //
 //
@@ -17705,7 +18246,14 @@ exports.default = void 0;
 //
 //
 var _default = {
-  props: ['character']
+  props: ['character'],
+  methods: {
+    characterChoice: function characterChoice(name) {
+      _characterService.default.choose(name);
+
+      _router.default.push('/game/14');
+    }
+  }
 };
 exports.default = _default;
         var $fc171a = exports.default || module.exports;
@@ -17720,15 +18268,25 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("article", [
-    _c("h2", [_vm._v(_vm._s(_vm.character.name) + " ")]),
-    _vm._v(" "),
-    _c("h3", [_vm._v(" " + _vm._s(_vm.character.speciality) + " ")]),
-    _vm._v(" "),
-    _c("img", { attrs: { src: _vm.character.image, alt: "" } }),
-    _vm._v(" "),
-    _c("div", { staticClass: "test" }, [_vm._v("Je choisis celui-ci")])
-  ])
+  return _c(
+    "article",
+    {
+      on: {
+        click: function($event) {
+          return _vm.characterChoice(_vm.character.name)
+        }
+      }
+    },
+    [
+      _c("h2", [_vm._v(_vm._s(_vm.character.name) + " ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(_vm._s(_vm.character.description))]),
+      _vm._v(" "),
+      _c("img", { attrs: { src: _vm.character.image, alt: "" } }),
+      _vm._v(" "),
+      _c("div", { staticClass: "test" }, [_vm._v("Je choisis celui-ci")])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -17763,11 +18321,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/coco/Bitmap.png":[function(require,module,exports) {
-module.exports = "/Bitmap.f95cc058.png";
-},{}],"assets/images/coco/Bitmap2.png":[function(require,module,exports) {
-module.exports = "/Bitmap2.4166ee13.png";
-},{}],"components/Characters.vue":[function(require,module,exports) {
+},{"../router.js":"router.js","../services/characterService.js":"services/characterService.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Characters.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17777,7 +18331,7 @@ exports.default = void 0;
 
 var _Character = _interopRequireDefault(require("./Character.vue"));
 
-var _data = _interopRequireDefault(require("../../data.json"));
+var _data2 = _interopRequireDefault(require("../../data.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17872,16 +18426,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   data: function data() {
     return {
-      characters: [{
-        name: "Peter",
-        speciality: "resiste aux morsures",
-        image: require('/assets/images/coco/Bitmap.png')
-      }, {
-        name: "Rocco",
-        speciality: "resiste au poison",
-        image: require('/assets/images/coco/Bitmap2.png')
-      }]
+      message: 'Choisissez votre personnage',
+      characters: _data2.default.characters,
+      image: _data2.default.character.image
+      /*       characters: [
+              {
+              name : "Peter",
+              speciality : "resiste aux morsures",
+              image : require('/assets/images/coco/Bitmap.png')
+            },
+            {
+              name : "Rocco",
+              speciality : "resiste au poison",
+              image : require('/assets/images/coco/Bitmap2.png')
+            }
+            ] */
+
     };
+  },
+  methods: {
+    setBackground: function setBackground() {
+      document.addEventListener('DOMContentLoaded', function () {
+        var bigHeader = document.querySelector('.big-header');
+        bigHeader.style.backgroundImage = 'url(' + _data2.default.home.image + ')';
+        return _data2.default.home.image;
+      });
+    }
   },
   components: {
     Character: _Character.default
@@ -17970,7 +18540,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Character.vue":"components/Character.vue","../../data.json":"../data.json","/assets/images/coco/Bitmap.png":"assets/images/coco/Bitmap.png","/assets/images/coco/Bitmap2.png":"assets/images/coco/Bitmap2.png","./../assets/images/coco/character.gif":[["character.896be5be.gif","assets/images/coco/character.gif"],"assets/images/coco/character.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"services/itemsService.js":[function(require,module,exports) {
+},{"./Character.vue":"components/Character.vue","../../data.json":"../data.json","./../assets/images/coco/character.gif":[["character.896be5be.gif","assets/images/coco/character.gif"],"assets/images/coco/character.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"services/itemsService.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -17994,7 +18564,10 @@ function () {
       "shield": 0,
       "money": 0,
       "thief": 0,
-      "rune": 0
+      "rune1": 0,
+      "rune2": 0,
+      "rune3": 0,
+      "rune4": 0
     };
     localStorage.setItem('items', JSON.stringify(this.item));
   }
@@ -18008,7 +18581,10 @@ function () {
       this.item.shield += item.shield;
       this.item.money += item.money;
       this.item.thief += item.thief;
-      this.item.rune += item.rune;
+      this.item.rune1 += item.rune1;
+      this.item.rune2 += item.rune2;
+      this.item.rune3 += item.rune3;
+      this.item.rune4 += item.rune4;
       localStorage.setItem('items', JSON.stringify(this.item));
     }
   }, {
@@ -18022,54 +18598,6 @@ function () {
 }();
 
 module.exports = new items();
-},{}],"services/characterService.js":[function(require,module,exports) {
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-/**
- * Class to set and get player's character
- * @class character
- */
-var Character =
-/*#__PURE__*/
-function () {
-  function Character() {
-    _classCallCheck(this, Character);
-
-    this.character = 'Default';
-  }
-  /**
-   * Set the character's name in `localStorage`
-   * @param {String} character character's name
-   * @memberof character
-   */
-
-
-  _createClass(Character, [{
-    key: "choose",
-    value: function choose(character) {
-      this.character = character;
-      localStorage.setItem('character', this.character);
-    }
-    /**
-     * @returns current character
-     * @memberof character
-     */
-
-  }, {
-    key: "get",
-    value: function get() {
-      return localStorage.getItem('character');
-    }
-  }]);
-
-  return Character;
-}();
-
-module.exports = new Character();
 },{}],"components/Game.vue":[function(require,module,exports) {
 "use strict";
 
@@ -18251,17 +18779,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import Map from "../services/mappingGame.js";
 var _default = {
   data: function data() {
     return {
@@ -18271,33 +18788,35 @@ var _default = {
             mage: data.game[this.$route.params.id].image,*/
       phase: _data2.default.steps[this.$route.params.id],
       answers: this.characterChoice(),
+      //this.question.answers
       step: this.setStep(),
-      character: _characterService.default.get(),
+      character: localStorage.getItem('character'),
+      // character.get(),
       image: _data2.default.steps[this.$route.params.id].image,
       items: _itemsService.default.getItems()
     };
   },
   methods: {
-    createMap: function createMap() {
-      var _this = this;
-
-      setTimeout(function () {
-        var map = new Map(document.querySelector('.big-header'), 5, game);
-        _this.images = map.create(_this.$route.params.id).map(function (image) {
-          return require(image);
-        });
-      }, 200);
-    },
+    /*     createMap() {
+          setTimeout(() => {
+            const map = new Map(document.querySelector('.big-header'), 5, game);
+            this.images = map.create(this.$route.params.id).map(image => require(image));
+          }, 200);
+        }, */
     characterChoice: function characterChoice() {
-      var answers = _data2.default.steps[this.$route.params.id].garçon.answers; //attention à GARçON
-
+      var questions = _data2.default.steps[this.$route.params.id];
       var result = [];
-      var characterName = answers.name; // character.get()
+      var characterName = localStorage.getItem('character');
 
-      answers.forEach(function (answer) {
-        answer.perso === characterName || answer.perso === 'Tous' ? result.push(answer) : '';
+      if (characterName === "José") {
+        questions = _data2.default.steps[this.$route.params.id].José.answers;
+      } else {
+        questions = _data2.default.steps[this.$route.params.id].Joséphine.answers;
+      }
+
+      questions.forEach(function (question) {
+        result.push(question);
       });
-      console.log("answersTab", answers);
       return result;
     },
     setStep: function setStep() {
@@ -18349,13 +18868,13 @@ exports.default = _default;
         "div",
         { staticClass: "text" },
         [
-          _c("h1", [_vm._v(_vm._s(_vm.phase.garçon.message))]),
-          _vm._v(" "),
-          _vm.character === "fille"
-            ? _c("h1", [_vm._v(_vm._s(_vm.phase.fille.message))])
+          _vm.character === "José"
+            ? _c("h1", [_vm._v(" " + _vm._s(_vm.phase.José.message))])
             : _vm._e(),
           _vm._v(" "),
-          _c("div", { staticClass: "item", attrs: { "data-content": "3" } }),
+          _vm.character === "Joséphine"
+            ? _c("h1", [_vm._v(_vm._s(_vm.phase.Joséphine.message))])
+            : _vm._e(),
           _vm._v(" "),
           _vm._l(_vm.answers, function(answer) {
             return _c(
@@ -18380,7 +18899,7 @@ exports.default = _default;
         _c("img", {
           attrs: {
             src: "/Bitmap.f95cc058.png",
-            alt: "charcter"
+            alt: "character"
           }
         }),
         _vm._v(" "),
@@ -18393,24 +18912,149 @@ exports.default = _default;
                     alt: ""
                   }
                 })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.sword < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/sword_gris.60a5a096.png",
+                    alt: ""
+                  }
+                })
               : _vm._e()
           ]),
           _vm._v(" "),
-          _vm._m(0),
+          _c("li", [
+            _vm.items.shield >= 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/shield.2a388c5f.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.shield < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/shield_gris.dc5aedd8.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e()
+          ]),
           _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2)
+          _c("li", [
+            _vm.items.thief >= 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/thief.64d54678.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.thief < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/thief_gris.7fe8a1c4.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e()
+          ])
         ])
       ]),
       _vm._v(" "),
-      _vm._m(3),
+      _c("section", { staticClass: "runes" }, [
+        _c("ul", { staticClass: "rune" }, [
+          _c("li", [
+            _vm.items.rune1 >= 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune1.1c37c022.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.rune1 < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune1_gris.f0f70f21.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm.items.rune2 >= 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune2.681f711e.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.rune2 < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune2_gris.4f1ea224.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm.items.rune3 >= 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune3.6ccac5f6.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.rune3 < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune3_gris.51ddc3aa.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm.items.rune4 >= 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune4.45cd6663.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.items.rune4 < 1
+              ? _c("img", {
+                  attrs: {
+                    src: "/rune4_gris.aac17690.png",
+                    alt: ""
+                  }
+                })
+              : _vm._e()
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _c("section", { staticClass: "money" }, [
         _c("img", {
           attrs: {
             src: "/coin.0ac31016.png",
-            alt: "charcter"
+            alt: "character"
           }
         }),
         _vm._v(" "),
@@ -18419,70 +19063,7 @@ exports.default = _default;
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("img", {
-        attrs: { src: "/shield.2a388c5f.png", alt: "" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("img", {
-        attrs: { src: "/sick.1cbcd54d.png", alt: "" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("img", {
-        attrs: { src: "/thief.64d54678.png", alt: "" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "runes" }, [
-      _c("ul", { staticClass: "rune" }, [
-        _c("li", [
-          _c("img", {
-            attrs: { src: "/rune1.1c37c022.png", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("img", {
-            attrs: { src: "/rune2.681f711e.png", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("img", {
-            attrs: { src: "/rune3.6ccac5f6.png", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("img", {
-            attrs: { src: "/rune4.45cd6663.png", alt: "" }
-          })
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
           return {
@@ -18515,7 +19096,7 @@ render._withStripped = true
       
       }
     })();
-},{"../../data.json":"../data.json","../services/itemsService.js":"services/itemsService.js","../services/characterService.js":"services/characterService.js","../services/stepService.js":"services/stepService.js","./../assets/images/coco/Bitmap.png":[["Bitmap.f95cc058.png","assets/images/coco/Bitmap.png"],"assets/images/coco/Bitmap.png"],"./../assets/images/coco/sword.png":[["sword.e8e1a60a.png","assets/images/coco/sword.png"],"assets/images/coco/sword.png"],"./../assets/images/coco/shield.png":[["shield.2a388c5f.png","assets/images/coco/shield.png"],"assets/images/coco/shield.png"],"./../assets/images/coco/sick.png":[["sick.1cbcd54d.png","assets/images/coco/sick.png"],"assets/images/coco/sick.png"],"./../assets/images/coco/thief.png":[["thief.64d54678.png","assets/images/coco/thief.png"],"assets/images/coco/thief.png"],"./../assets/images/coco/rune1.png":[["rune1.1c37c022.png","assets/images/coco/rune1.png"],"assets/images/coco/rune1.png"],"./../assets/images/coco/rune2.png":[["rune2.681f711e.png","assets/images/coco/rune2.png"],"assets/images/coco/rune2.png"],"./../assets/images/coco/rune3.png":[["rune3.6ccac5f6.png","assets/images/coco/rune3.png"],"assets/images/coco/rune3.png"],"./../assets/images/coco/rune4.png":[["rune4.45cd6663.png","assets/images/coco/rune4.png"],"assets/images/coco/rune4.png"],"./../assets/images/coco/coin.png":[["coin.0ac31016.png","assets/images/coco/coin.png"],"assets/images/coco/coin.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
+},{"../../data.json":"../data.json","../services/itemsService.js":"services/itemsService.js","../services/characterService.js":"services/characterService.js","../services/stepService.js":"services/stepService.js","./../assets/images/coco/Bitmap.png":[["Bitmap.f95cc058.png","assets/images/coco/Bitmap.png"],"assets/images/coco/Bitmap.png"],"./../assets/images/coco/sword.png":[["sword.e8e1a60a.png","assets/images/coco/sword.png"],"assets/images/coco/sword.png"],"./../assets/images/coco/sword_gris.png":[["sword_gris.60a5a096.png","assets/images/coco/sword_gris.png"],"assets/images/coco/sword_gris.png"],"./../assets/images/coco/shield.png":[["shield.2a388c5f.png","assets/images/coco/shield.png"],"assets/images/coco/shield.png"],"./../assets/images/coco/shield_gris.png":[["shield_gris.dc5aedd8.png","assets/images/coco/shield_gris.png"],"assets/images/coco/shield_gris.png"],"./../assets/images/coco/thief.png":[["thief.64d54678.png","assets/images/coco/thief.png"],"assets/images/coco/thief.png"],"./../assets/images/coco/thief_gris.png":[["thief_gris.7fe8a1c4.png","assets/images/coco/thief_gris.png"],"assets/images/coco/thief_gris.png"],"./../assets/images/coco/rune1.png":[["rune1.1c37c022.png","assets/images/coco/rune1.png"],"assets/images/coco/rune1.png"],"./../assets/images/coco/rune1_gris.png":[["rune1_gris.f0f70f21.png","assets/images/coco/rune1_gris.png"],"assets/images/coco/rune1_gris.png"],"./../assets/images/coco/rune2.png":[["rune2.681f711e.png","assets/images/coco/rune2.png"],"assets/images/coco/rune2.png"],"./../assets/images/coco/rune2_gris.png":[["rune2_gris.4f1ea224.png","assets/images/coco/rune2_gris.png"],"assets/images/coco/rune2_gris.png"],"./../assets/images/coco/rune3.png":[["rune3.6ccac5f6.png","assets/images/coco/rune3.png"],"assets/images/coco/rune3.png"],"./../assets/images/coco/rune3_gris.png":[["rune3_gris.51ddc3aa.png","assets/images/coco/rune3_gris.png"],"assets/images/coco/rune3_gris.png"],"./../assets/images/coco/rune4.png":[["rune4.45cd6663.png","assets/images/coco/rune4.png"],"assets/images/coco/rune4.png"],"./../assets/images/coco/rune4_gris.png":[["rune4_gris.aac17690.png","assets/images/coco/rune4_gris.png"],"assets/images/coco/rune4_gris.png"],"./../assets/images/coco/coin.png":[["coin.0ac31016.png","assets/images/coco/coin.png"],"assets/images/coco/coin.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18927,6 +19508,8 @@ exports.default = _default;
 
 require("./assets/scss/styles.scss");
 
+require("./assets/scss/import.scss");
+
 var _vue = _interopRequireDefault(require("vue"));
 
 var _router = _interopRequireDefault(require("./router"));
@@ -18936,7 +19519,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 new _vue.default({
   router: _router.default
 }).$mount('#root');
-},{"./assets/scss/styles.scss":"assets/scss/styles.scss","vue":"../node_modules/vue/dist/vue.common.js","./router":"router.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./assets/scss/styles.scss":"assets/scss/styles.scss","./assets/scss/import.scss":"assets/scss/import.scss","vue":"../node_modules/vue/dist/vue.common.js","./router":"router.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -18964,7 +19547,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56900" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58503" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

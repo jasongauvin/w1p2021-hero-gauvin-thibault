@@ -11,7 +11,10 @@ class items {
       "shield" : 0, 
       "money" : 0,
       "thief": 0,
-      "rune": 0
+      "rune1": 0,
+      "rune2": 0,
+      "rune3": 0,
+      "rune4": 0
       };
       localStorage.setItem('items', JSON.stringify(this.item));
 
@@ -22,7 +25,10 @@ class items {
     this.item.shield += item.shield;
     this.item.money += item.money;
     this.item.thief += item.thief;
-    this.item.rune += item.rune;
+    this.item.rune1 += item.rune1;
+    this.item.rune2 += item.rune2;
+    this.item.rune3 += item.rune3;
+    this.item.rune4 += item.rune4;
     localStorage.setItem('items', JSON.stringify(this.item));
   }
 
