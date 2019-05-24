@@ -18915,22 +18915,26 @@ var _default = {
       var itemsThief = parsedItems.thief;
       deaths.noSword.map(function (x) {
         if (itemsSword == 0 && x == futureCase) {
-          isDead = true; //alert("Et bah oui banane ! C'est pas très malin d'aller affronter des monstres sans épée !")
+          isDead = true;
+          console.warn("Et bah oui banane ! C'est pas très malin d'aller affronter des monstres sans épée !");
         }
       });
       deaths.noSwordNoShield.map(function (x) {
         if (itemsSword == 0 || itemsShield == 0) {
-          if (x == futureCase) isDeadx = true; //alert("Gros nul ! Pour l'épée on dit trop rien mais là, sans bouclier : C'est vraiment pas très malin !")          
+          if (x == futureCase) isDeadx = true;
+          console.warn("Béta ! Pour l'épée on dit trop rien mais là, sans bouclier : C'est vraiment pas très malin !");
         }
       });
       deaths.oneThief.map(function (x) {
         if (itemsThief > 1 && x == futureCase) {
-          isDead = true; //alert("Un copain c'est bien, mais tu connais le dicton : Trop bon, trop mort !")
+          isDead = true;
+          console.warn("Un copain c'est bien, mais tu connais le dicton : Trop bon, trop mort !");
         }
       });
       victory.runes.map(function (rune) {
         if (parsedItems["".concat(rune)] === 1) {
-          if (futureCase == victory.case) link = '/win'; //alert("Et bah voilà ! C'était pas compliqué ! Maintenant, rejoins la case sortie !")
+          if (futureCase == victory.case) link = '/win';
+          console.warn("Et bah voilà ! C'était pas compliqué ! Maintenant, rejoins la case sortie !");
         }
       });
       this.$router.push(isDead ? '/lose' : link);
@@ -19728,7 +19732,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57617" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57532" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
