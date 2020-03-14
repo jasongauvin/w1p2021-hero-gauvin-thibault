@@ -28,7 +28,7 @@
     "vue": "./node_modules/vue/dist/vue.common.js"
   },
   "dependencies": {
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.1",
     "app": "^0.1.0",
     "howler": "^2.1.2",
     "node-pre-gyp": "^0.13.0",
